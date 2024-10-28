@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 int main() {
-  printf("Lavet af: Kevin\n");
-
-  printf("Lavet af: Tobias\n");
+  printf("Lavet af: Kevin, Mathilde, Isabella, Tobias\n");
   return 0;
 }
