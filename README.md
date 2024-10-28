@@ -2,4 +2,11 @@
 This is the repository for our P1 product.
 
 
+ Elias
 Hej
+
+- Tobias
+- Kevin
+- Mathilde
+
+ main
