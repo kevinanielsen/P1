@@ -3,6 +3,6 @@
 int main() {
   printf("Lavet af: Kevin\n");
 
-  printf("Lavet af: Tobias\n")
+  printf("Lavet af: Tobias\n");
   return 0;
 }
