@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-enum Genres {
+struct Movie {
+  char title[70];
+  int sadness;
+  Themes themes[5];
+  Genres genres[5];
+};
+
+typedef enum Genres {
   ACTION,
   ADVENTURE,
   ANIMATION,
@@ -22,9 +29,10 @@ enum Genres {
   THRILLER,
   WAR,
   WESTERN,
-};
+  RETRO,
+} Genres;
 
-enum Themes {
+typedef enum Themes {
   IDENTITY,
   FRIENDSHIP,
   COURAGE,
@@ -49,7 +57,7 @@ enum Themes {
   TECHNOLOGY_AND_HUMANITY,
   COMEDY,
   REVENGE,
-};
+} Themes;
 
 int main() {
   printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias ");
