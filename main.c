@@ -28,7 +28,7 @@ enum Themes {
 };
 
 int main() {
-  printf("Lavet af: Kevin");
+  printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias ");
 
   return 0;
 }
