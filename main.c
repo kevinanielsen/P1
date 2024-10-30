@@ -1,5 +1,29 @@
 #include <stdio.h>
 
+enum Genres {
+  ACTION,
+  ADVENTURE,
+  ANIMATION,
+  BIOGRAPHY,
+  COMEDY,
+  CRIME,
+  DRAMA,
+  FAMILY,
+  FANTASY,
+  FILM_NOIR,
+  HISTORY,
+  HORROR,
+  MUSIC,
+  MUSICAL,
+  MYSTERY,
+  ROMANCE,
+  SCI_FI,
+  SPORT,
+  THRILLER,
+  WAR,
+  WESTERN,
+};
+
 enum Themes {
   IDENTITY,
   FRIENDSHIP,
