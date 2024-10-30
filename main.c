@@ -22,6 +22,7 @@ typedef enum Genres {
   THRILLER,
   WAR,
   WESTERN,
+  RETRO,
 } Genres;
 
 typedef enum Themes {
