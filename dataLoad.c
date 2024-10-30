@@ -3,71 +3,40 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#define MAXCHAR 1000
+#define MAXCHAR 500
 
+enum {kTitle = 100, kGenre = 100, kThemes = 100};
 typedef struct {
-    char title[70];
+    int rank;
+    char title[kTitle];
     int sadness;
-    char genre[70];
-
-} Variables;
+    char genre[kGenre];
+    char theme[kThemes];
+} movieVariables;
 
 int main(void) {
-    FILE *fp;
-    char row[MAXCHAR];
-    Variables variable[250];
-    int records = 0;
+    FILE *fp; // Initializing file pointer
 
-    fp = fopen("IMDBTop250MoviesNY.csv", "r");
-    if (fp == NULL) {
+    fp = fopen("IMDBTop250Movies.csv", "r"); // r - read mode
+    if (fp == NULL) { 
         printf("Error opening file.\n");
         return 1;
     }
 
-    // Reading and parsing each row
-    while (fgets(row, MAXCHAR, fp) != NULL && records < 250) {
-        printf("Row: %s", row);
+    movieVariables variable[250]; // Åbner for 250 tomme "pladser" i structuren movieVariables
+    int counter = 0; // Bruges som en counter til hver linje gennemgået.
+    char line[MAXCHAR]; // Et array med MAXCHAR pladser.
+    
+    while (fgets(line, MAXCHAR, fp) != NULL && counter < 251) {  // While loop som anvender funktionen fgets. Den skal bruge et sted at opbevare dataen, maks antal characters den skal læse, og fra hvilken fil. Hvis det lykkedes opbevares dataen i det første parameter. Stopper hvis filen er tom, og derfor er NULL.
+        sscanf(line, "%d; %69[^;]; %d; %69[^;]; %69[^\n]", 
+        &variable[counter].rank, variable[counter].title, 
+        &variable[counter].sadness, variable[counter].genre, 
+        variable[counter].theme);
+        // De indsatte værdier er det maksimale antal characters. Hvert placeholder stemmer overens med CSV filens rækkefølge.
 
-        // Tokenize by semicolon to extract fields
-        char *token = strtok(row, ";");
-        int fieldIndex = 0;
-
-        // Temporary variables for parsing
-        int id;
-        char title[70];
-        int sadness;
-        char genre[70];
-
-        // Process each token in the row
-        while (token != NULL) {
-            if (fieldIndex == 0) {
-                id = atoi(token);  // Convert the first token to an integer ID
-            } else if (fieldIndex == 1) {
-                strncpy(title, token, 69);  // Copy the title
-                title[69] = '\0';  // Ensure null-termination
-            } else if (fieldIndex == 2) {
-                sadness = atoi(token);  // Convert the sadness score to an integer
-            } else if (fieldIndex == 3){
-                strncpy(genre, token, 69);
-                genre[69] = '\0'; 
-            }
-            token = strtok(NULL, ";");
-            fieldIndex++;
-        }
-
-        // Store the parsed title and sadness in the struct
-        strncpy(variable[records].title, title, 69);
-        variable[records].title[69] = '\0';  // Ensure null-termination
-        variable[records].sadness = sadness;
-        strncpy(variable[records].genre, genre, 69);
-        variable[records].genre[69] = '\0';
-
-        // Print parsed values
-        printf("Parsed title: %s, sadness: %d, Genre: %s\n", variable[records].title, variable[records].sadness, variable[records].genre);
-
-        records++;
+        counter++;
     }
-
     fclose(fp);
+    
     return 0;
 }
