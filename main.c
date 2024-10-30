@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+struct Movie {
+  char title[70];
+  int sadness;
+  Themes themes[5];
+  Genres genres[5];
+};
+
 typedef enum Genres {
   ACTION,
   ADVENTURE,
