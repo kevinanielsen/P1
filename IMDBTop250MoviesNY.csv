@@ -1,0 +1,254 @@
+rank;name;Sadness;themes;genre
+3;The Dark Knight;1;Goodvs. Evil, Power and Corruption, Fear, Justice, Sacrifice;Action,Crime,Drama
+8;Pulp Fiction;1;Redemption, Betrayal, Friendship, Identity, Fear;Crime,Drama,Retro
+16;The Matrix;1;Identity, Fear, Power and Corruption, Freedom, Redemption;Action,Sci-Fi,Retro
+28;Star Wars Episode IV - A New Hope;1;Good vs. Evil, Adventure, Friendship, Hope, Courage;Action,Adventure,Fantasy,Retro
+29;Terminator 2 Judgment Day;1;Survival, Technology and Humanity, Sacrifice, Fear, Redemption;Action,Sci-Fi,Retro
+30;Back to the Future;1;Dreams and Aspirations, Adventure, Coming of Age, Identity, Family;Adventure,Comedy,Sci-Fi,Retro
+43;Casablanca;1;Love, Sacrifice, War and Peace, Friendship, Loss;Drama,Romance,War, Retro
+55;Django Unchained;1;Redemption, Freedom, Betrayal, Power and Corruption, Justice;Drama,Western
+56;Indiana Jones and the Raiders of the Lost Ark;1;Adventure, Survival, Friendship, Courage, Power and Corruption;Action,Adventure,Retro
+63;Avengers Infinity War;1;Good vs. Evil, Sacrifice, Friendship, Loss, Hope;Action,Adventure,Sci-Fi
+66;Spider-Man Into the Spider-Verse;1;Identity, Friendship, Coming of Age, Courage, Hope;Animation,Action,Adventure
+68;Dr. Strangelove or How I Learned to Stop Worrying and Love the Bomb;1;War and Peace, Power and Corruption, Fear, Justice, Comedy;Comedy,War,Retro
+83;3 Idiots;1;Dreams and Aspirations, Friendship, Coming of Age, Identity, Courage;Comedy,Drama
+84;Singin' in the Rain;1;Love, Friendship, Dreams and Aspirations, Power and Corruption, Adventure;Comedy,Musical,Romance,Retro
+98;North by Northwest;1;Good vs. Evil, Identity, Adventure, Fear, Isolation;Action,Adventure,Mystery,Retro
+111;Heat;1;Good vs. Evil, Betrayal, Friendship, Power and Corruption, Sacrifice;Action,Crime,Drama,Retro
+112;The Sting;1;Betrayal, Friendship, Identity, Good vs. Evil, Adventure;Comedy,Crime,Drama,Retroclclear
+
+117;L.A. Confidential;1;Power and Corruption, Justice, Betrayal, Love, Isolation;Crime,Drama,Mystery,Retro
+118;Die Hard;1;Survival, Courage, Sacrifice, Good vs. Evil, Fear;Action,Thriller,Retro
+119;Snatch;1;Identity, Good vs. Evil, Betrayal, Friendship, Adventure;Comedy,Crime
+120;Indiana Jones and the Last Crusade;1;Adventure, Survival, Friendship, Courage, Power and Corruption;Action,Adventure,Retro
+126;For a Few Dollars More;1;Good vs. Evil, Redemption, Friendship, Survival, Betrayal;Western,Retro
+129;Some Like It Hot;1;Friendship, Identity, Love, Comedy, Adventure;Comedy,Music,Romance,Retro
+132;The Wolf of Wall Street;1;Power and Corruption, Identity, Betrayal, Dreams and Aspirations, Freedom;Biography,Comedy,Crime
+144;Jurassic Park;1;Survival, Technology and Humanity, Adventure, Fear, Power and Corruption;Action,Adventure,Sci-Fi,Retro
+147;Monty Python and the Holy Grail;1;Adventure, Comedy, Good vs. Evil, Friendship, Power and Corruption;Adventure,Comedy,Fantasy,Retro
+151;Kill Bill Vol. 1;1;Revenge, Courage, Betrayal, Friendship, Sacrifice;Action,Crime,Drama
+153;The Thing;1;Survival, Fear, Isolation, Identity, Technology and Humanity;Horror,Mystery,Sci-Fi,Retro
+158;V for Vendetta;1;Freedom, Power and Corruption, Justice, Identity, Sacrifice;Action,Drama,Sci-Fi
+160;Lock, Stock and Two Smoking Barrels;1;Betrayal, Friendship, Adventure, Identity, Power and Corruption;Action,Comedy,Crime,Retro
+162;Dial M for Murder;1;Betrayal, Fear, Justice, Isolation, Love;Crime,Thriller,Retro
+173;Catch Me If You Can;1;Identity, Redemption, Adventure, Betrayal, Dreams and Aspirations;Biography,Crime,Drama
+176;Blade Runner;1;Technology and Humanity, Identity, Freedom, Survival, Fear;Action,Drama,Sci-Fi,Retro
+185;The Grand Budapest Hotel;1;Friendship, Adventure, Identity, Sacrifice, Isolation;Adventure,Comedy,Crime
+187;The General;1;Adventure, Survival, Courage, Comedy, War and Peace;Action,Adventure,Comedy,Retro
+195;Sherlock Jr.;1;Comedy, Identity, Dreams and Aspirations, Adventure, Friendship;Action,Comedy,Romance,Retro
+198;Mad Max Fury Road;1;Survival, Adventure, Freedom, Courage, War and Peace;Action,Adventure,Sci-Fi
+204;Jaws;1;Survival, Fear, Courage, Adventure, Loss;Adventure,Thriller,Retro
+206;The Big Lebowski;1;Identity, Friendship, Adventure, Comedy, Loss;Comedy,Crime,Retro
+210;Ford v Ferrari;1;Dreams and Aspirations, Friendship, Courage, Adventure, Sacrifice;Action,Biography,Drama
+213;Ratatouille;1;Dreams and Aspirations, Identity, Friendship, Adventure, Courage;Animation,Adventure,Comedy
+215;The Terminator;1;Survival, Technology and Humanity, Fear, Freedom, Redemption;Action,Sci-Fi,Retro
+216;Logan;1;Redemption, Identity, Friendship, Sacrifice, Survival;Action,Drama,Sci-Fi
+222;The Wizard of Oz;1;Friendship, Coming of Age, Courage, Identity, Hope;Adventure,Family,Fantasy,Retro
+226;The Exorcist;1;Fear, Isolation, Loss, Good vs. Evil, Courage;Horror,Retro
+227;The Incredibles;1;Family, Identity, Courage, Adventure, Friendship;Animation,Action,Adventure
+231;Pirates of the Caribbean The Curse of the Black Pearl;1;Adventure, Freedom, Friendship, Sacrifice, Good vs. Evil;Action,Adventure,Fantasy
+241;The Sound of Music;1;Family, Love, Courage, Friendship, Power and Corruption;Biography,Drama,Family,Retro
+242;It Happened One Night;1;Love, Friendship, Adventure, Coming of Age, Identity;Comedy,Romance,Retro
+248;Aladdin;1;Love, Identity, Dreams and Aspirations, Friendship, Adventure;Animation,Adventure,Comedy,Retro
+1;The Shawshank Redemption;2;Hope, Friendship, Redemption, Isolation, Courage;Drama,Retro
+2;The Godfather;2;Power and Corruption, Family, Betrayal, Good vs. Evil, Sacrifice;Crime,Drama,Retro
+5;12 Angry Men;2;Justice, Identity, Courage, Friendship, Fear;Crime,Drama,Retro
+7;The Lord of the Rings The Return of the King;2;Good vs. Evil, Friendship, Sacrifice, Hope, Courage;Action,Adventure,Drama
+9;The Lord of the Rings The Fellowship of the Ring;2;Good vs. Evil, Friendship, Adventure, Sacrifice, Coming of Age;Action,Adventure,Drama
+10;The Good, the Bad and the Ugly;2;Good vs. Evil, Survival, Friendship, Betrayal, Adventure;Adventure,Western,Retro
+12;Fight Club;2;Identity, Freedom, Mental Health, Good vs. Evil, Courage;Drama,Retro
+13;The Lord of the Rings The Two Towers;2;Good vs. Evil, Friendship, Sacrifice, Courage, War and Peace;Action,Adventure,Drama
+15;Star Wars Episode V - The Empire Strikes Back;2;Good vs. Evil, Hope, Friendship, Courage, Isolation;Action,Adventure,Fantasy,Retro
+19;Se7en;2;Good vs. Evil, Justice, Fear, Isolation, Betrayal;Crime,Drama,Mystery,Retro
+33;Psycho;2;Fear, Isolation, Identity, Betrayal, Mental Health;Horror,Mystery,Thriller,Retro
+37;Gladiator;2;Revenge, Courage, Power and Corruption, Sacrifice, Survival;Action,Adventure,Drama
+40;The Usual Suspects;2;Betrayal, Identity, Good vs. Evil, Fear, Friendship;Crime,Drama,Mystery,Retro
+42;Whiplash;2;Dreams and Aspirations, Identity, Courage, Friendship, Sacrifice;Drama,Music
+47;Modern Times;2;Technology and Humanity, Isolation, Courage, Adventure, Comedy;Comedy,Drama,Romance,Retro
+49;Rear Window;2;Fear, Isolation, Friendship, Identity, Good vs. Evil;Mystery,Thriller,Retro
+51;Alien;2;Survival, Fear, Technology and Humanity, Isolation, Courage;Horror,Sci-Fi,Retro
+57;WALL-E;2;Technology and Humanity, Love, Hope, Adventure, Survival;Animation,Adventure,Family
+62;The Great Dictator;2;Freedom, Power and Corruption, Comedy, Identity, Hope;Comedy,Drama,War,Retro
+64;Witness for the Prosecution;2;Justice, Betrayal, Fear, Identity, Love;Crime,Drama,Mystery,Retro
+65;Aliens;2;Survival, Fear, Courage, Friendship, Technology and Humanity;Action,Adventure,Sci-Fi,Retro
+69;The Dark Knight Rises;2;Good vs. Evil, Redemption, Courage, Sacrifice, Hope;Action,Drama
+71;Inglourious Basterds;2;Revenge, War and Peace, Power and Corruption, Friendship, Identity;Adventure,Drama,War
+73;Coco;2;Family, Identity, Love, Dreams and Aspirations, Coming of Age;Animation,Adventure,Comedy
+74;Toy Story;2;Friendship, Identity, Adventure, Love, Coming of Age;Animation,Adventure,Comedy,Retro
+78;Avengers Endgame;2;Friendship, Sacrifice, Good vs. Evil, Hope, Courage;Action,Adventure,Drama
+79;Princess Mononoke;2;Technology and Humanity, Identity, Freedom, War and Peace, Friendship;Animation,Action,Adventure,Retro
+82;Your Name;2;Love, Identity, Coming of Age, Friendship, Dreams and Aspirations;Animation,Drama,Fantasy
+89;Star Wars Episode VI - Return of the Jedi;2;Good vs. Evil, Friendship, Hope, Courage, Sacrifice;Action,Adventure,Fantasy,Retro
+91;2001 A Space Odyssey;2;Technology and Humanity, Identity, Adventure, Isolation, Fear;Adventure,Sci-Fi,Retro
+92;Reservoir Dogs;2;Betrayal, Friendship, Identity, Good vs. Evil, Fear;Crime,Thriller,Retro
+101;Amélie;2;Love, Identity, Adventure, Friendship, Hope;Comedy,Romance
+105;Full Metal Jacket;2;War and Peace, Isolation, Fear, Power and Corruption, Courage;Drama,War,Retro
+106;Top Gun Maverick;2;Courage, Friendship, Dreams and Aspirations, Sacrifice, Adventure;Action,Drama
+107;Scarface;2;Power and Corruption, Identity, Betrayal, Good vs. Evil, Survival;Crime,Drama,Retro
+108;Hamilton;2;Dreams and Aspirations, Power and Corruption, Identity, War and Peace, Courage;Biography,Drama,History
+115;Metropolis;2;Technology and Humanity, Identity, Power and Corruption, Freedom, Isolation;Drama,Sci-Fi,Retro
+116;Taxi Driver;2;Isolation, Mental Health, Identity, Fear, Courage;Crime,Drama,Retro
+123;1917;2;War and Peace, Survival, Courage, Friendship, Sacrifice;Action,Drama,War
+125;Dangal;2;Family, Dreams and Aspirations, Identity, Courage, Coming of Age;Action,Biography,Drama
+138;The Truman Show;2;Identity, Freedom, Technology and Humanity, Isolation, Courage;Comedy,Drama,Retro
+145;Yojimbo;2;Good vs. Evil, Betrayal, Survival, Power and Corruption, Courage;Action,Drama,Thriller,Retro
+148;The Great Escape;2;Survival, Courage, Friendship, Sacrifice, War and Peace;Adventure,Drama,History,Retro
+150;Spider-Man No Way Home;2;Identity, Friendship, Redemption, Sacrifice, Coming of Age;Action,Adventure,Fantasy
+152;Rashomon;2;Identity, Justice, Betrayal, Isolation, Fear;Crime,Drama,Mystery,Retro
+161;Inside Out;2;Mental Health, Identity, Coming of Age, Friendship, Courage;Animation,Adventure,Comedy
+164;Howl's Moving Castle;2;Love, Adventure, Identity, Freedom, Courage;Animation,Adventure,Family
+166;The Bridge on the River Kwai;2;War and Peace, Courage, Survival, Friendship, Sacrifice;Adventure,Drama,War,Retro
+170;Fargo;2;Isolation, Fear, Identity, Good vs. Evil, Loss;Crime,Thriller,Retro
+172;My Neighbor Totoro;2;Family, Friendship, Adventure, Coming of Age, Hope;Animation,Comedy,Family,Retro
+177;The Gold Rush;2;Adventure, Survival, Love, Comedy, Friendship;Adventure,Comedy,Drama,Retro
+178;Before Sunrise;2;Love, Friendship, Identity, Dreams and Aspirations, Coming of Age;Drama,Romance,Retro
+180;Klaus;2;Friendship, Love, Identity, Hope, Coming of Age;Animation,Adventure,Comedy
+188;The Third Man;2;Good vs. Evil, Betrayal, Isolation, Power and Corruption, Fear;Film-Noir,Mystery,Thriller,Retro
+192;Hacksaw Ridge;2;Courage, Sacrifice, Hope, War and Peace, Redemption;Biography,Drama,History
+196;Wild Tales;2;Revenge, Betrayal, Fear, Justice, Identity;Comedy,Drama,Thriller
+201;How to Train Your Dragon;2;Friendship, Identity, Coming of Age, Courage, Adventure;Animation,Action,Adventure
+203;Monsters, Inc.;2;Friendship, Identity, Adventure, Family, Courage;Animation,Adventure,Comedy
+211;Rocky;2;Dreams and Aspirations, Courage, Friendship, Sacrifice, Identity;Drama,Sport,Retro
+218;Rush;2;Friendship, Courage, Power and Corruption, Sacrifice, Dreams and Aspirations;Action,Biography,Drama
+221;Before Sunset;2;Love, Friendship, Identity, Coming of Age, Dreams and Aspirations;Drama,Romance
+224;Groundhog Day;2;Identity, Redemption, Courage, Comedy, Friendship;Comedy,Drama,Fantasy,Retro
+228;To Be or Not to Be;2;Comedy, War and Peace, Identity, Courage, Friendship;Comedy,Romance,War,Retro
+238;Cool Hand Luke;2;Courage, Isolation, Identity, Friendship, Power and Corruption;Crime,Drama,Retro
+244;Life of Brian;2;Comedy, Identity, Freedom, Good vs. Evil, Friendship;Comedy,Retro
+4;The Godfather Part II;3;Power and Corruption, Family, Betrayal, Good vs. Evil, Sacrifice;Crime,Drama,Retro
+11;Forrest Gump;3;Friendship, Dreams and Aspirations, Identity, Coming of Age, Love;Drama,Romance,Retro
+14;Inception;3;Identity, Dreams and Aspirations, Fear, Technology and Humanity, Friendship;Action,Adventure,Sci-Fi
+17;Goodfellas;3;Betrayal, Power and Corruption, Friendship, Identity, Fear;Biography,Crime,Drama,Retro
+20;Seven Samurai;3;Courage, Friendship, Sacrifice, War and Peace, Identity;Action,Drama,Retro
+21;It's a Wonderful Life;3;Family, Hope, Friendship, Identity, Sacrifice;Drama,Family,Fantasy,Retro
+22;The Silence of the Lambs;3;Fear, Identity, Good vs. Evil, Isolation, Courage;Crime,Drama,Thriller,Retro
+24;Saving Private Ryan;3;War and Peace, Courage, Sacrifice, Friendship, Survival;Drama,War,Retro
+31;Spirited Away;3;Identity, Adventure, Friendship, Courage, Coming of Age;Animation,Adventure,Family
+34;Parasite;3;Justice, Identity, Power and Corruption, Betrayal, Survival;Drama,Thriller
+35;Léon The Professional;3;Friendship, Sacrifice, Identity, Courage, Revenge;Action,Crime,Drama,Retro
+36;The Lion King;3;Family, Identity, Coming of Age, Courage, Love;Animation,Adventure,Drama,Retro
+39;The Departed;3;Betrayal, Power and Corruption, Good vs. Evil, Fear, Identity;Crime,Drama,Thriller
+41;The Prestige;3;Revenge, Identity, Mental Health, Sacrifice, Good vs. Evil;Drama,Mystery,Sci-Fi
+46;The Intouchables;3;Friendship, Identity, Courage, Love, Coming of Age;Biography,Comedy,Drama
+48;Once Upon a Time in the West;3;Friendship, Revenge, Adventure, Good vs. Evil, Isolation;Western,Retro
+52;City Lights;3;Love, Comedy, Friendship, Sacrifice, Identity;Comedy,Drama,Romance,Retro
+54;Memento;3;Identity, Fear, Betrayal, Loss, Revenge;Mystery,Thriller
+61;The Shining;3;Fear, Isolation, Mental Health, Courage, Family;Drama,Horror,Retro
+67;American Beauty;3;Identity, Freedom, Dreams and Aspirations, Family, Sacrifice;Drama,Retro
+72;Amadeus;3;Betrayal, Identity, Dreams and Aspirations, Sacrifice, Friendship;Biography,Drama,Music,Retro
+75;Joker;3;Isolation, Mental Health, Identity, Fear, Power and Corruption;Crime,Drama,Thriller
+76;Braveheart;3;Freedom, Courage, Revenge, Sacrifice, War and Peace;Biography,Drama,History,Retro
+80;Once Upon a Time in America;3;Friendship, Betrayal, Power and Corruption, Dreams and Aspirations, Identity;Crime,Drama,Retro
+81;Good Will Hunting;3;Identity, Friendship, Dreams and Aspirations, Courage, Redemption;Drama,Romance,Retro
+86;Toy Story 3;3;Friendship, Identity, Coming of Age, Courage, Loss;Animation,Adventure,Comedy
+87;High and Low;3;Sacrifice, Justice, Betrayal, Loss, Courage;Crime,Drama,Mystery,Retro
+90;Eternal Sunshine of the Spotless Mind;3;Love, Identity, Mental Health, Dreams and Aspirations, Courage;Drama,Romance,Sci-Fi
+95;Citizen Kane;3;Power and Corruption, Identity, Dreams and Aspirations, Loss, Isolation;Drama,Mystery,Retro
+96;M;3;Fear, Identity, Justice, Mental Health, Good vs. Evil;Crime,Mystery,Thriller,Retro
+97;Lawrence of Arabia;3;Adventure, Identity, War and Peace, Courage, Isolation;Adventure,Biography,Drama,Retro
+99;Vertigo;3;Fear, Identity, Love, Mental Health, Isolation;Mystery,Romance,Thriller,Retro
+102;The Apartment;3;Love, Identity, Sacrifice, Friendship, Comedy;Comedy,Drama,Romance,Retro
+104;Double Indemnity;3;Betrayal, Power and Corruption, Fear, Love, Isolation;Crime,Drama,Film-Noir,Retro
+110;To Kill a Mockingbird;3;Justice, Family, Identity, Courage, Coming of Age;Crime,Drama,Retro
+113;Up;3;Adventure, Friendship, Loss, Identity, Dreams and Aspirations;Animation,Adventure,Comedy
+122;Like Stars on Earth;3;Coming of Age, Identity, Friendship, Courage, Dreams and Aspirations;Drama,Family
+127;Batman Begins;3;Good vs. Evil, Identity, Fear, Courage, Sacrifice;Action,Crime,Drama
+128;The Kid;3;Love, Friendship, Identity, Sacrifice, Adventure;Comedy,Drama,Family,Retro
+131;All About Eve;3;Dreams and Aspirations, Betrayal, Identity, Friendship, Sacrifice;Drama,Retro
+133;Green Book;3;Friendship, Identity, Courage, Justice, Coming of Age;Biography,Comedy,Drama
+135;Casino;3;Power and Corruption, Betrayal, Friendship, Dreams and Aspirations, Fear;Crime,Drama,Retro
+139;There Will Be Blood;3;Power and Corruption, Sacrifice, Betrayal, Family, Revenge;Drama
+141;The Sixth Sense;3;Fear, Isolation, Identity, Courage, Loss;Drama,Mystery,Thriller,Retro
+143;A Beautiful Mind;3;Mental Health, Identity, Friendship, Courage, Dreams and Aspirations;Biography,Drama
+146;The Treasure of the Sierra Madre;3;Adventure, Power and Corruption, Betrayal, Survival, Loss;Adventure,Drama,Western,Retro
+149;No Country for Old Men;3;Good vs. Evil, Fear, Betrayal, Loss, Redemption;Crime,Drama,Thriller
+154;Finding Nemo;3;Family, Adventure, Courage, Friendship, Identity;Animation,Adventure,Comedy
+156;Chinatown;3;Power and Corruption, Betrayal, Justice, Identity, Fear;Drama,Mystery,Thriller,Retro
+157;Raging Bull;3;Identity, Revenge, Courage, Sacrifice, Mental Health;Biography,Drama,Sport,Retro
+159;Gone with the Wind;3;Love, Loss, War and Peace, Identity, Sacrifice;Drama,Romance,War,Retro
+163;The Secret in Their Eyes;3;Justice, Revenge, Identity, Betrayal, Love;Drama,Mystery,Romance
+168;Prisoners;3;Good vs. Evil, Fear, Sacrifice, Justice, Isolation;Crime,Drama,Mystery
+169;Warrior;3;Redemption, Family, Identity, Courage, Sacrifice;Action,Drama,Sport
+171;Gran Torino;3;Friendship, Redemption, Identity, Family, Courage;Drama
+181;Harry Potter and the Deathly Hallows Part 2;3;Good vs. Evil, Friendship, Sacrifice, Courage, Hope;Adventure,Family,Fantasy
+184;Gone Girl;3;Betrayal, Identity, Fear, Love, Power and Corruption;Drama,Mystery,Thriller
+186;Wild Strawberries;3;Identity, Loss, Family, Dreams and Aspirations, Redemption;Drama,Romance,Retro
+191;Barry Lyndon;3;Adventure, Power and Corruption, Betrayal, Love, Loss;Adventure,Drama,War,Retro
+193;The Wages of Fear;3;Survival, Courage, Fear, Isolation, Sacrifice;Adventure,Drama,Thriller,Retro
+194;Memories of Murder;3;Justice, Fear, Identity, Isolation, Good vs. Evil;Crime,Drama,Mystery
+197;Mr. Smith Goes to Washington;3;Justice, Dreams and Aspirations, Power and Corruption, Courage, Friendship;Comedy,Drama,Retro
+202;Room;3;Isolation, Survival, Identity, Fear, Courage;Drama,Thriller
+205;Dead Poets Power and Corruption;3;Friendship, Identity, Dreams and Aspirations, Courage, Coming of Age;Comedy,Drama,Retro
+212;Platoon;3;War and Peace, Survival, Courage, Loss, Betrayal;Drama,War,Retro
+214;Spotlight;3;Justice, Power and Corruption, Identity, Courage, Friendship;Biography,Crime,Drama
+217;Stand by Me;3;Friendship, Coming of Age, Loss, Adventure, Identity;Adventure,Drama,Retro
+219;Network;3;Power and Corruption, Fear, Sacrifice, Justice, Mental Health;Drama,Retro
+225;The Best Years of Our Lives;3;War and Peace, Family, Friendship, Loss, Identity;Drama,Romance,War,Retro
+229;La haine;3;Friendship, Isolation, War and Peace, Identity, Fear;Crime,Drama,Retro
+230;The Battle of Algiers;3;War and Peace, Identity, Power and Corruption, Courage, Justice;Drama,War,Retro
+236;Amores Perros;3;Love, Betrayal, Identity, Survival, Fear;Drama,Thriller
+237;Rebecca;3;Identity, Betrayal, Isolation, Love, Fear;Drama,Film-Noir,Mystery,Retro
+239;The Handmaiden;3;Love, Betrayal, Identity, Freedom, Sacrifice;Drama,Romance,Thriller
+240;The 400 Blows;3;Coming of Age, Identity, Isolation, Family, Power and Corruption;Crime,Drama,Retro
+243;Persona;3;Identity, Isolation, Mental Health, Fear, Love;Drama,Thriller,Retro
+245;The Iron Giant;3;Friendship, Courage, Identity, Sacrifice, Coming of Age;Animation,Action,Adventure,Retro
+246;The Help;3;Friendship, Courage, Betrayal, Justice, Sacrifice;Drama
+247;Dersu Uzala;3;Friendship, Technology and Humanity, Survival, Identity, Adventure;Adventure,Biography,Drama,Retro
+249;Gandhi;3;Justice, Freedom, Courage, Identity, Sacrifice;Biography,Drama,History,Retro
+250;Dances with Wolves;3;Friendship, Identity, Technology and Humanity, War and Peace, Coming of Age;Adventure,Drama,Western,Retro
+6;Schindler's List;4;War and Peace, Sacrifice, Justice, Loss, Redemption;Biography,Drama,History,Retro
+18;One Flew Over the Cuckoo's Nest;4;Freedom, Isolation, Mental Health, Courage, Power and Corruption;Drama,Retro
+23;City of God;4;Survival, War and Peace, Identity, Friendship, Fear;Crime,Drama
+25;Interstellar;4;Love, Survival, Identity, Hope, Technology and Humanity;Adventure,Drama,Sci-Fi
+26;Life Is Beautiful;4;Love, Loss, Courage, Sacrifice, Family;Comedy,Drama,Romance,Retro
+27;The Green Mile;4;Friendship, Justice, Isolation, Courage, Sacrifice;Crime,Drama,Fantasy,Retro
+32;The Pianist;4;Survival, Isolation, Loss, Courage, War and Peace;Biography,Drama,Music
+38;American History X;4;Identity, War and Peace, Redemption, Friendship, Betrayal;Crime,Drama,Retro
+44;Grave of the Fireflies;4;War and Peace, Loss, Survival, Family, Courage;Animation,Drama,War,Retro
+45;Harakiri;4;Justice, Betrayal, Isolation, Identity, Sacrifice;Action,Drama,Mystery,Retro
+50;Cinema Paradiso;4;Love, Identity, Coming of Age, Friendship, Dreams and Aspirations;Drama,Romance,Retro
+53;Apocalypse Now;4;War and Peace, Isolation, Fear, Courage, Power and Corruption;Drama,Mystery,War,Retro
+58;The Lives of Others;4;Isolation, Fear, Identity, Courage, Friendship;Drama,Mystery,Thriller
+59;Sunset Blvd.;4;Isolation, Power and Corruption, Identity, Dreams and Aspirations, Fear;Drama,Film-Noir,Retro
+60;Paths of Glory;4;War and Peace, Justice, Courage, Sacrifice, Isolation;Drama,War,Retro
+70;Oldboy;4;Revenge, Identity, Betrayal, Fear, Isolation;Action,Drama,Mystery
+77;The Boat;4;Survival, Fear, Isolation, Courage, Sacrifice;Drama,War,Retro
+85;Requiem for a Dream;4;Fear, Loss, Sacrifice, Dreams and Aspirations, Mental Health;Drama
+88;Capernaum;4;Survival, Identity, Coming of Age, Family, Courage;Drama
+93;Come and See;4;War and Peace, Fear, Loss, Courage, Isolation;Drama,Thriller,War,Retro
+94;The Hunt;4;Fear, Isolation, Betrayal, Identity, Justice;Drama
+100;Ikiru;4;Identity, Sacrifice, Redemption, Family, Dreams and Aspirations;Drama,Retro
+103;A Clockwork Orange;4;Power and Corruption, Fear, Betrayal, Good vs. Evil, Freedom;Crime,Sci-Fi,Retro
+109;Incendies;4;Family, Identity, War and Peace, Courage, Loss;Drama,Mystery
+114;A Separation;4;Family, Identity, Justice, Betrayal, Courage;Drama
+121;Bicycle Thieves;4;Survival, Identity, Loss, Family, Sacrifice;Drama,Retro
+124;Downfall;4;War and Peace, Power and Corruption, Isolation, Fear, Betrayal;Biography,Drama,History
+130;The Father;4;Identity, Loss, Mental Health, Family, Courage;Drama,Mystery
+134;Judgment at Nuremberg;4;Justice, Good vs. Evil, Isolation, Power and Corruption, Courage;Drama,War,Retro
+136;Ran;4;War and Peace, Family, Betrayal, Power and Corruption, Identity;Action,Drama,War,Retro
+137;Pan's Labyrinth;4;Good vs. Evil, Courage, Loss, Isolation, Coming of Age;Drama,Fantasy,War
+140;Unforgiven;4;Redemption, Justice, Good vs. Evil, War and Peace, Identity;Drama,Western,Retro
+142;Shutter Island;4;Isolation, Mental Health, Identity, Fear, Courage;Mystery,Thriller
+155;The Elephant Man;4;Identity, Isolation, Power and Corruption, Courage, Friendship;Biography,Drama,Retro
+165;Three Billboards Outside Ebbing, Missouri;4;Justice, Loss, Family, Courage, Revenge;Comedy,Crime,Drama
+167;Trainspotting;4;Mental Health, Friendship, Identity, Fear, Isolation;Drama,Retro
+174;Million Dollar Baby;4;Dreams and Aspirations, Courage, Sacrifice, Family, Redemption;Drama,Sport
+175;Children of Heaven;4;Family, Identity, Courage, Justice, Loss;Drama,Family,Sport,Retro
+179;12 Years a Slave;4;Survival, Freedom, Justice, Identity, Courage;Biography,Drama,History
+182;On the Waterfront;4;Justice, Family, Courage, Identity, Betrayal;Crime,Drama,Thriller,Retro
+183;Ben-Hur;4;Redemption, War and Peace, Family, Hope, Sacrifice;Adventure,Drama,Retro
+189;In the Name of the Father;4;Justice, Identity, Courage, Family, Betrayal;Biography,Crime,Drama,Retro
+190;The Deer Hunter;4;War and Peace, Friendship, Mental Health, Courage, Loss;Drama,War,Retro
+199;The Seventh Seal;4;Loss, Isolation, Hope, Courage, Identity;Drama,Fantasy,Retro
+200;Mary and Max;4;Friendship, Isolation, Mental Health, Identity, Love;Animation,Comedy,Drama
+207;Tokyo Story;4;Family, Loss, Identity, Dreams and Aspirations, Sacrifice;Drama,Retro
+208;The Passion of Joan of Arc;4;Hope, Sacrifice, Justice, Courage, Identity;Biography,Drama,History,Retro
+209;Hotel Rwanda;4;War and Peace, Courage, Justice, Survival, Identity;Biography,Drama,History
+220;Into the Wild;4;Adventure, Identity, Freedom, Loss, Courage;Adventure,Biography,Drama
+223;Pather Panchali;4;Family, Justice, Identity, Loss, Coming of Age;Drama,Retro
+232;Hachi A Dog's Tale;4;Friendship, Sacrifice, Loss, Love, Courage;Biography,Drama,Family
+233;The Grapes of Wrath;4;Survival, Sacrifice, Family, Justice, Courage;Drama,Retro
+234;Jai Bhim;4;Justice, Identity, Courage, Power and Corruption, Good vs. Evil;Crime,Drama,Mystery
+235;My Father and My Son;4;Family, Love, Identity, Loss, Coming of Age;Drama,Family
+;;;;
+;;;;
