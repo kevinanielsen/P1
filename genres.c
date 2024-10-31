@@ -74,10 +74,3 @@ const char* getGenreName(Genres genre) {
     }
 }
 
-Genres getGenreInput (){
-  Genres genre;
-  getGenre(&genre);
-  printf("Genre: %s\n", getGenreName(genre));
-
-  return genre;
-}
