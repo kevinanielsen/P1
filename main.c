@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "themes.h"
 #include "genres.h"
+#include "dataLoad.h"
 #include "sadness.h"
-
 
 void get_mood (int *mood);
 void get_genre (Genres *genre); 
@@ -10,16 +10,10 @@ void get_theme (Themes *theme);
 const char* get_genre_name(Genres genre);
 const char* get_theme_name(Themes theme);
 
-struct Movie {
-  char title[70];
-  Sadness sadness;
-  Themes themes[5];
-  Genres genres[5];
-};
-
-
 int main() {
-  printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias ");
+  dataLoad();
+  
+  printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
   int mood;
   get_mood(&mood);
