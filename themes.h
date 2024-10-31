@@ -30,6 +30,6 @@ typedef enum Themes {
 } Themes;
 
 void getTheme (Themes *theme); 
-const char* getGenreName(Themes theme);
+const char* getThemeName(Themes theme);
 
 #endif
