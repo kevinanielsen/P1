@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "themes.h"
 #include "genres.h"
+#include "sadness.h"
 
 
 void get_mood (int *mood);
@@ -11,7 +12,7 @@ const char* get_theme_name(Themes theme);
 
 struct Movie {
   char title[70];
-  int sadness;
+  Sadness sadness;
   Themes themes[5];
   Genres genres[5];
 };
