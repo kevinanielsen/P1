@@ -7,7 +7,7 @@
 int main() {
   dataLoad();
   
-  printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias ");
+  printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
   return 0;
 }
