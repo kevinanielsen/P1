@@ -14,6 +14,7 @@ typedef enum Themes {
   JUSTICE,
   SURVIVAL,
   LOVE,
+  ISOLATION,
   WAR_AND_PEACE,
   FAMILY,
   DREAMS_AND_ASPIRATIONS,
@@ -28,4 +29,7 @@ typedef enum Themes {
   REVENGE,
 } Themes;
 
-#endif // THEMES_H
+void getTheme (Themes *theme); 
+const char* getGenreName(Themes theme);
+
+#endif
