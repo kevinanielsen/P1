@@ -1,20 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 #include <stdlib.h>
+
+#include "movie.h"
+
 
 #define MAXCHAR 500
 
-enum {kTitle = 100, kGenre = 100, kThemes = 100};
-typedef struct {
-    int rank;
-    char title[kTitle];
-    int sadness;
-    char genre[kGenre];
-    char theme[kThemes];
-} movieVariables;
 
-int main(void) {
+int dataLoad(void) {
     FILE *fp; // Initializing file pointer
 
     fp = fopen("IMDBTop250Movies.csv", "r"); // r - read mode
@@ -23,7 +17,7 @@ int main(void) {
         return 1;
     }
 
-    movieVariables variable[250]; // Åbner for 250 tomme "pladser" i structuren movieVariables
+    Movie variable[250]; // Åbner for 250 tomme "pladser" i structuren movieVariables
     int counter = 0; // Bruges som en counter til hver linje gennemgået.
     char line[MAXCHAR]; // Et array med MAXCHAR pladser.
     
@@ -35,7 +29,6 @@ int main(void) {
         // De indsatte værdier er det maksimale antal characters. Hvert placeholder stemmer overens med CSV filens rækkefølge.
         counter++;
     }
-
     fclose(fp);
     return 0;
 }
