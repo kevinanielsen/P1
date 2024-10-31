@@ -4,20 +4,22 @@
 #include "dataLoad.h"
 #include "sadness.h"
 
-void get_mood (int *mood);
+void get_mood (Sadness *mood);
 void get_genre (Genres *genre); 
 void get_theme (Themes *theme); 
 const char* get_genre_name(Genres genre);
 const char* get_theme_name(Themes theme);
+const char* get_mood_name(Sadness mood);
+
 
 int main() {
   dataLoad();
   
   printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
-  int mood;
+  Sadness mood;
   get_mood(&mood);
-  printf("Mood: %d", mood);
+  printf("Mood: %s\n", get_mood_name(mood));
   
   Genres genre;
   get_genre(&genre);
@@ -28,18 +30,30 @@ int main() {
   printf("Theme: %s\n", get_theme_name(theme));
   
   return 0;
+}
   
-}
 
-
-void get_mood (int *mood){
+void get_mood (Sadness *mood){
     printf("Hvilket mood er du i?\n");
-    printf("Tast 1, 2, 3 eller 4\n");
-    printf("1 No sadness, 2 Mild sadness, 3 Moderate sadness og 4 Severe sadness\n");
-    scanf(" %d", mood );
+    printf("Tast 0, 1, 2 eller 3\n");
+    printf("0 No sadness, 1 Mild sadness, 2 Moderate sadness og 3 Severe sadness\n");
+ 
+    for (int i = NO_SADNESS; i <= SEVERE_SADNESS; i++) {
+        printf(" %d: %s\n", i, get_mood_name(i));
+    }
+    
+    printf("\nTast et tal mellem 0-3\n");
+    int input;
+    scanf(" %d", &input);
 
-    return; 
+    if (input >= NO_SADNESS && input <= SEVERE_SADNESS) {
+        *mood = (Sadness) input;
+    } else {
+        printf("Ugyldigt genrevalg\n");
+        *mood = NO_SADNESS;
+    } 
 }
+
 
 void get_genre (Genres *genre) {
     printf("\nHvilken genre vil du se?\n");
@@ -78,6 +92,21 @@ void get_theme(Themes *theme) {
         *theme = IDENTITY;
     } 
 }
+const char* get_mood_name(Sadness mood){
+  switch (mood){
+    case NO_SADNESS:
+        return "NO_SADNESS";
+   case MILD_SADNESS:
+        return "MILD_SADNESS";
+   case MODERATE_SADNESS:
+       return "MODERATE_SADNESS";
+   case SEVERE_SADNESS:
+        return "SEVERE_SADNESS";
+    default: 
+        return "Unknown";
+  }
+}
+
 
 const char* get_genre_name(Genres genre) {
     switch (genre) {
@@ -86,17 +115,17 @@ const char* get_genre_name(Genres genre) {
         case ADVENTURE_GENRE: 
             return "ADVENTURE";
         case ANIMATION: 
-         return "ANIMATION";
+            return "ANIMATION";
         case BIOGRAPHY: 
-         return "BIOGRAPHY";
+            return "BIOGRAPHY";
         case COMEDY_GENRE: 
-         return "COMEDY"; 
+            return "COMEDY"; 
         case CRIME: 
-         return "CRIME";
+            return "CRIME";
         case DRAMA: 
-         return "DRAMA";
+            return "DRAMA";
         case FAMILY_GENRE: 
-          return "FAMILY";
+            return "FAMILY";
         case FANTASY: 
             return "FANTASY";
         case FILM_NOIR: 
