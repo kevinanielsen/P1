@@ -13,8 +13,6 @@ int main() {
   
   printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
-  themes();
-
   int mood;
   get_mood(&mood);
   printf("Mood: %d", mood);
@@ -23,6 +21,10 @@ int main() {
   get_genre(&genre);
   printf("Genre: %s\n", get_genre_name(genre));
   
+  Themes theme;
+  getTheme(&theme);
+  printf("Theme %s\n",getThemeName(theme));
+
   return 0;
   
 }
