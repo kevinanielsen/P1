@@ -5,8 +5,6 @@
 #include "sadness.h"
 
 void get_mood (int *mood);
-void get_genre (Genres *genre); 
-const char* get_genre_name(Genres genre);
 
 int main() {
   dataLoad();
@@ -16,19 +14,18 @@ int main() {
   int mood;
   get_mood(&mood);
   printf("Mood: %d", mood);
-  
+
   Genres genre;
-  get_genre(&genre);
-  printf("Genre: %s\n", get_genre_name(genre));
+  getGenre(&genre);
+  printf("Genre: %s\n", getGenreName(genre));
   
   Themes theme;
-  getTheme(&theme);
-  printf("Theme %s\n",getThemeName(theme));
+  get_theme(&theme);
+  printf("Theme: %s\n", get_theme_name(theme));
 
   return 0;
   
 }
-
 
 void get_mood (int *mood){
     printf("Hvilket mood er du i?\n");
@@ -37,74 +34,4 @@ void get_mood (int *mood){
     scanf(" %d", mood );
 
     return; 
-}
-
-void get_genre (Genres *genre) {
-    printf("\nHvilken genre vil du se?\n");
-
-    for (int i = ACTION; i <= RETRO; i++) {
-        printf(" %d: %s\n", i, get_genre_name(i));
-    }
-    
-    printf("\nTast et tal mellem 0-21\n");
-    int input;
-    scanf(" %d", &input);
-
-    if (input >= ACTION && input <= RETRO) {
-        *genre = (Genres) input;
-    } else {
-        printf("Ugyldigt genrevalg\n");
-        *genre = ACTION;
-    } 
-}
-
-const char* get_genre_name(Genres genre) {
-    switch (genre) {
-        case ACTION: 
-            return "ACTION";
-        case ADVENTURE_GENRE: 
-            return "ADVENTURE";
-        case ANIMATION: 
-         return "ANIMATION";
-        case BIOGRAPHY: 
-         return "BIOGRAPHY";
-        case COMEDY_GENRE: 
-         return "COMEDY"; 
-        case CRIME: 
-         return "CRIME";
-        case DRAMA: 
-         return "DRAMA";
-        case FAMILY_GENRE: 
-          return "FAMILY";
-        case FANTASY: 
-            return "FANTASY";
-        case FILM_NOIR: 
-            return "FILM_NOIR";
-        case HISTORY: 
-            return "HISTORY";
-        case HORROR: 
-            return "HORROR";
-        case MUSIC: 
-            return "MUSIC";
-        case MUSICAL: 
-            return "MUSICAL";
-        case MYSTERY: 
-            return "MYSTERY";
-        case ROMANCE: 
-            return "ROMANCE";
-        case SCI_FI: 
-            return "SCI_FI";
-        case SPORT: 
-            return "SPORT";
-        case THRILLER: 
-            return "THRILLER";
-        case WAR: 
-            return "WAR";
-        case WESTERN: 
-            return "WESTERN";
-        case RETRO: 
-            return "RETRO";
-        default: 
-            return "Unknown";
-    }
 }
