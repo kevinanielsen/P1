@@ -8,4 +8,8 @@ typedef enum Sadness {
    SEVERE_SADNESS,
 } Sadness;
 
+void getMood (Sadness *mood);
+const char *getMoodName(int mood);
+
+
 #endif // SADNESS_H
