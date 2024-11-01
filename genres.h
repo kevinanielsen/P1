@@ -26,4 +26,7 @@ typedef enum Genres {
     RETRO,
 } Genres;
 
-#endif // GENRES_H
+void getGenre (Genres *genre); 
+const char* getGenreName(Genres genre);
+
+#endif
