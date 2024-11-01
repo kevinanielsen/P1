@@ -1,9 +1,5 @@
 #include <stdio.h>
-
-typedef struct Ratings{
-    const char *title; 
-    int rating;        
-} Ratings;
+#include "ratings.h"
 
 void rate_10_movies()
 {
@@ -40,4 +36,5 @@ void rate_10_movies()
             }
         }
     }
+    return ratings;
 }
