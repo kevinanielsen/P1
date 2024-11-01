@@ -2,7 +2,6 @@
 #include "themes.h"
 #include "genres.h"
 #include "dataLoad.h"
-#include "sadness.h"
 
 void get_mood (int *mood);
 
@@ -20,8 +19,8 @@ int main() {
   printf("Genre: %s\n", getGenreName(genre));
   
   Themes theme;
-  get_theme(&theme);
-  printf("Theme: %s\n", get_theme_name(theme));
+  getTheme(&theme);
+  printf("Theme: %s\n", getThemeName(theme));
 
   return 0;
   
