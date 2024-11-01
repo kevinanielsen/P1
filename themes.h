@@ -25,6 +25,7 @@ typedef enum Themes {
   MENTAL_HEALTH,
   TECHNOLOGY_AND_HUMANITY,
   COMEDY,
+  ISOLATION,
   REVENGE,
 } Themes;
 
