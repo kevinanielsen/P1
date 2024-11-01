@@ -15,7 +15,7 @@ const char* get_mood_name(Sadness mood);
 int main() {
   dataLoad();
   
-  printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
+  printf("Made by: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
   Sadness mood;
   get_mood(&mood);
@@ -34,42 +34,42 @@ int main() {
   
 
 void get_mood (Sadness *mood){
-    printf("Hvilket mood er du i?\n");
-    printf("Tast 0, 1, 2 eller 3\n");
+    printf("What mood are you in??\n");
+    printf("Press 0, 1, 2 or 3\n");
     printf("0 No sadness, 1 Mild sadness, 2 Moderate sadness og 3 Severe sadness\n");
  
     for (int i = NO_SADNESS; i <= SEVERE_SADNESS; i++) {
         printf(" %d: %s\n", i, get_mood_name(i));
     }
     
-    printf("\nTast et tal mellem 0-3\n");
+    printf("\nEnter a number between 0-3\n");
     int input;
     scanf(" %d", &input);
 
     if (input >= NO_SADNESS && input <= SEVERE_SADNESS) {
         *mood = (Sadness) input;
     } else {
-        printf("Ugyldigt genrevalg\n");
+        printf("Invalid input\n");
         *mood = NO_SADNESS;
     } 
 }
 
 
 void get_genre (Genres *genre) {
-    printf("\nHvilken genre vil du se?\n");
+    printf("\nWhat genre do you want to see?\n");
 
     for (int i = ACTION; i <= RETRO; i++) {
         printf(" %d: %s\n", i, get_genre_name(i));
     }
     
-    printf("\nTast et tal mellem 0-21\n");
+    printf("\nEnter a number between 0-21\n");
     int input;
     scanf(" %d", &input);
 
     if (input >= ACTION && input <= RETRO) {
         *genre = (Genres) input;
     } else {
-        printf("Ugyldigt genrevalg\n");
+        printf("Invalid input\n");
         *genre = ACTION;
     } 
 }
@@ -81,14 +81,14 @@ void get_theme(Themes *theme) {
      printf(" %d: %s\n", i, get_theme_name(i));
     }
     
-    printf("\nTast et tal mellem 0-23\n");
+    printf("\nEnter a number between 0-23\n");
     int input;
     scanf(" %d", &input);
 
     if (input >= IDENTITY && input <= REVENGE) {
         *theme = (Themes) input;
     } else {
-        printf("Ugyldigt genrevalg\n");
+        printf("Invalid input\n");
         *theme = IDENTITY;
     } 
 }
