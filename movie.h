@@ -16,4 +16,5 @@ typedef struct Movie {
   Genres genres[5];
 } Movie;
 
+Movie movie[250]; // Global variable
 #endif

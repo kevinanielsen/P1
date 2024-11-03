@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"genres.h": "c",
+			"movie.h": "c",
+			"sadness.h": "c",
+			"search.h": "c"
+		}
+	}
+}

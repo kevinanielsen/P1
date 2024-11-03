@@ -11,7 +11,7 @@ int dataLoad(void) {
         printf("Error opening file.\n");
         return 1;
     }
-    Movie variable[250]; // Åbner for 250 tomme "pladser" i structuren movieVariables
+ // Åbner for 250 tomme "pladser" i structuren movieVariables
     int counter = 0; // Bruges som en counter til hver linje gennemgået.
     char line[MAXCHAR]; // Et array med MAXCHAR pladser.
     
@@ -21,9 +21,9 @@ int dataLoad(void) {
     while (fgets(line, MAXCHAR, fp) != NULL && counter < 250) {
           // While loop som anvender funktionen fgets. Den skal bruge et sted at opbevare dataen, maks antal characters den skal læse, og fra hvilken fil. Hvis det lykkedes opbevares dataen i det første parameter. Stopper hvis filen er tom, og derfor er NULL.
         if (sscanf(line, "%d; %100[^;]; %d; %100[^;]; %100[^\n]", 
-                   &variable[counter].rank, variable[counter].title, 
-                   &variable[counter].sadness, variable[counter].theme, 
-                   variable[counter].genre) != 5) {
+                   &movie[counter].rank, movie[counter].title, 
+                   &movie[counter].sadness, movie[counter].theme, 
+                   movie[counter].genre) != 5) {
             printf("Error parsing line: %s\n", line);
             continue;
         }

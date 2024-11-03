@@ -3,9 +3,13 @@
 #include "genres.h"
 #include "dataLoad.h"
 #include "sadness.h"
+#include "search.h"
+#include "movie.h"
 
 int main() {
   dataLoad();
+ 
+  searchGenre(movie, 250, "Action");
   
   printf("Made by: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
