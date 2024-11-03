@@ -29,17 +29,4 @@ Movie *dataLoad(void) {
         counter++;
     }
     fclose(fp);
-
-    for (int i = 0; i < 251; i++) {
-        char genres[5] = {};
-        sscanf(movies[i].genre, "%100[^,]", &genres[0]);
-        for (int j = 0; j < 5; j++) {
-            if (genres[j] == '\0') {
-                break;
-            }
-            printf("Genre: %s\n", genres[j]);
-        }
-    }
-
-    return movies;
 }
