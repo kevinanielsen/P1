@@ -30,5 +30,5 @@ int dataLoad(void) {
         counter++;
     }
     fclose(fp);
-    return 0;
+
 }
