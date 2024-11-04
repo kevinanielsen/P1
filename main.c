@@ -1,22 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "genres.h"
 #include "dataLoad.h"
+#include "genres.h"
+#include "movie.h"
 #include "ratings.h"
 #include "sadness.h"
 #include "search.h"
-#include "movie.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-  dataLoad();
- 
-  searchGenre(movie, 250, "Action");
+  Movie movie[250];
 
+  dataLoad(movie);
 
-  //searchTheme(movie, 250, "Fear");
+  int searchedGenreIndex[250];
+  searchGenre(movie, 250, "Action", searchedGenreIndex);
 
-  
-  printf("Made by: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
+  // searchTheme(movie, 250, "Fear");
+
+  printf(
+      "Made by: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
   Ratings *ratings = malloc(10 * sizeof(Ratings));
   ratings = rate10Movies();
@@ -32,6 +34,3 @@ int main() {
 
   return 0;
 }
-  
-
-
