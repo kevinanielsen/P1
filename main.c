@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "themes.h"
 #include "genres.h"
 #include "dataLoad.h"
 #include "ratings.h"
@@ -20,10 +19,6 @@ int main() {
   Genres genre;
   getGenre(&genre);
   printf("Genre: %s\n", getGenreName(genre));
-
-  Themes theme;
-  getTheme(&theme);
-  printf("Theme: %s\n", getThemeName(theme));
 
   return 0;
 }
