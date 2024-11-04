@@ -1,10 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "ratings.h"
 
 Ratings *rate10Movies()
 {
  
-    Ratings ratings[10] = {
+    Ratings* ratings = malloc(10 * sizeof(Ratings));
+    if (ratings == NULL) {
+        printf("Memory allocation failed.\n");
+        return NULL;
+    }
+    Ratings tempRatings[10] = {
         {"'The Shawshank Redemption' (1994) by Frank Darabont", 0},
         {"'The Dark Knight' (2008) by Christopher Nolan", 0},
         {"'The Wolf of Wall Street' (2013) by Martin Scorsese", 0},
@@ -16,6 +22,10 @@ Ratings *rate10Movies()
         {"'Fight Club' (1999) by David Fincher", 0},
         {"'Modern Times' (1936) by Charlie Chaplin", 0}
     };
+
+    for (int i = 0; i < 10; i++) {
+        ratings[i] = tempRatings[i];
+    }
 
     printf("Help us recommend your next favorite movie! Just rate these 10 movies to get started!\n");
     printf("Please rate each movie from 1 to 5 stars based on your personal opinion.\n");
