@@ -4,8 +4,6 @@
 #include "themes.h"
 #include "genres.h"
 
-
-
 typedef struct Movie {
   int rank;
   char title[70];
@@ -17,5 +15,7 @@ typedef struct Movie {
 
   int points;
 } Movie;
+
+void recommendMovies (Movie *movie);
 
 #endif
