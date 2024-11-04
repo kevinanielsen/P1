@@ -20,6 +20,8 @@ int main() {
   getGenre(&genre);
   printf("Genre: %s\n", getGenreName(genre));
 
+  free(ratings);
+
   return 0;
 }
   
