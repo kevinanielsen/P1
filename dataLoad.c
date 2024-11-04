@@ -4,7 +4,7 @@
 #include "movie.h"
 #define MAXCHAR 500
 
-int dataLoad(void) {
+int dataLoad(Movie *movie) {
     FILE *fp; // Initializing file pointer
     fp = fopen("IMDBTop250Movies.csv", "r"); // r - read mode
     if (fp == NULL) { 
