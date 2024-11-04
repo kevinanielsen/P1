@@ -14,6 +14,8 @@ typedef struct Movie {
   char theme[100];
   Themes themes[5];
   Genres genres[5];
+
+  int points;
 } Movie;
 
 #endif
