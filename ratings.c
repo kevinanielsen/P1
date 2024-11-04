@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "ratings.h"
 
-Ratings rate_10_movies()
+Ratings *rate10Movies()
 {
  
     Ratings ratings[10] = {
