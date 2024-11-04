@@ -12,6 +12,9 @@ int main() {
   
   printf("Lavet af: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
 
+  Ratings *ratings = malloc(10 * sizeof(Ratings));
+  ratings = rate10Movies();
+  
   int mood;
   get_mood(&mood);
   printf("Mood: %d", mood);
@@ -24,8 +27,6 @@ int main() {
   getTheme(&theme);
   printf("Theme: %s\n", getThemeName(theme));
   
-  Ratings *ratings = malloc(10 * sizeof(Ratings));
-  ratings = rate10Movies();
 
   return 0;
   
