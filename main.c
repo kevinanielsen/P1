@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "themes.h"
 #include "genres.h"
 #include "dataLoad.h"
+#include "ratings.h"
 
 void get_mood (int *mood);
 
@@ -21,6 +23,9 @@ int main() {
   Themes theme;
   getTheme(&theme);
   printf("Theme: %s\n", getThemeName(theme));
+  
+  Ratings *ratings = malloc(10 * sizeof(Ratings));
+  ratings = rate10Movies();
 
   return 0;
   
