@@ -16,6 +16,4 @@ void grading (RatedTheme ratedThemes[], Movie *movies){
     }
 
 }
-
 // Rating bliver spyttet ud i "movies
-

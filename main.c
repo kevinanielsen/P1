@@ -17,9 +17,6 @@ int main() {
 
   // searchTheme(movie, 250, "Fear");
 
-  printf(
-      "Made by: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
-
   Ratings *ratings = malloc(10 * sizeof(Ratings));
   ratings = rate10Movies();
 
