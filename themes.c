@@ -26,53 +26,53 @@ void getTheme(Themes *theme) {
 const char* getThemeName(Themes theme) {
     switch (theme) {
         case IDENTITY: 
-            return "IDENTITY";
+            return "Identity";
         case FRIENDSHIP: 
-            return "FRIENDSHIP";
+            return "Friendship";
         case COURAGE: 
-            return "COURAGE";
+            return "Courage";
         case FEAR: 
-            return "FEAR";
+            return "Fear";
         case SACRIFICE: 
-            return "SACRIFICE";
+            return "Sacrifice";
         case POWER_AND_CORRUPTION: 
-            return "POWER_AND_CORRUPTION";
+            return "Power and Corruption";
         case BETRAYAL: 
-            return "BETRAYAL";
+            return "Betrayal";
         case GOOD_VS_EVIL: 
-            return "GOOD_VS_EVIL";
+            return "Good vs. Evil";
         case ADVENTURE: 
-            return "ADVENTURE";
+            return "Adventure";
         case JUSTICE: 
-            return "JUSTICE";
+            return "Justice";
         case SURVIVAL: 
-            return "SURVIVAL";
+            return "Survival";
         case LOVE: 
-            return "LOVE";
+            return "Love";
         case WAR_AND_PEACE: 
-            return "WAR_AND_PEACE";
+            return "War and Peace";
         case FAMILY: 
-            return "FAMILY";
+            return "Family";
         case DREAMS_AND_ASPIRATIONS: 
-            return "DREAMS_AND_ASPIRATIONS";
+            return "Dreams and Aspirations";
         case COMING_OF_AGE: 
-            return "COMING_OF_AGE";
+            return "Coming of Age";
         case LOSS: 
-            return "LOSS";
+            return "Loss";
         case FREEDOM: 
-            return "FREEDOM";
+            return "Freedom";
         case HOPE: 
-            return "HOPE";
+            return "Hope";
         case REDEMPTION: 
-            return "REDEMPTION";
+            return "Redemption";
         case MENTAL_HEALTH: 
-            return "MENTAL_HEALTH";
+            return "Mental Health";
         case TECHNOLOGY_AND_HUMANITY: 
-            return "TECHNOLOGY_AND_HUMANITY";
+            return "Technology and Humanity";
         case COMEDY: 
-            return "COMEDY";
+            return "Comedy";
         case REVENGE: 
-            return "REVENGE";
+            return "Revenge";
         default: 
             return "Unknown";
     }
