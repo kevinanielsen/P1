@@ -1,23 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "themes.h"
-#include "ratings.c"
 #include "movie.h"
+#include "search.h"
 
 void grading (RatedTheme ratedThemes[], Movie *movies){
-    
+    for (int i = 0; i < 20; i++) {
+        char theme[50] = getThemeName(ratedThemes[i].theme);
+        int resultIndexes[250];
+        searchTheme(movies, 250, theme, *resultIndexes);
+
+        for (int j = 0; j < 250; j++) {
+            movies[resultIndexes[j]].points = ratedThemes[i].rating;
+        }
+    }
 
 }
 
-    // const char *moviesThemes[10][5] = {
-    //     {"Hope", "Friendship", "Redemption", "Isolation", "Courage"},
-    //     {"Good vs Evil", "Power and Corruption", "Fear", "Justice", "Sacrifice"},
-    //     {"Power and Corruption", "Identity", "Betrayal", "Dreams and Aspirations", "Freedom"},
-    //     {"Family", "Identity", "Love", "Dreams and Aspirations", "Coming of Age"},
-    //     {"Dreams and Aspirations", "Adventure", "Coming of Age", "Identity", "Family"},
-    //     {"Revenge", "Courage", "Power and Corruption", "Sacrifice", "Survival"},
-    //     {"Love", "Sacrifice", "War and Peace", "Friendship", "Loss"},
-    //     {"Technology and Humanity", "Love", "Hope", "Adventure", "Survival"},
-    //     {"Identity", "Freedom", "Mental Health", "Good vs Evil"},
-    //     {"Technology and Humanity", "Isolation", "Courage", "Adventure", "Comedy"}
-    // };
+// Rating bliver spyttet ud i "movies
+
