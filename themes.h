@@ -29,6 +29,11 @@ typedef enum Themes {
   REVENGE,
 } Themes;
 
+typedef struct RatedTheme {
+  Themes theme;
+  int rating;
+} RatedTheme;
+
 void getTheme (Themes *theme); 
 const char* getThemeName(Themes theme);
 
