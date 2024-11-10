@@ -35,8 +35,9 @@ int main() {
   getGenre(&genre);
   printf("Genre: %s\n", getGenreName(genre));
 
-  recommendMovies(movie);
+  recommendMovies(movies);
 
   free(ratings);
 
   return 0;
+}
