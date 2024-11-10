@@ -27,6 +27,7 @@ int dataLoad(Movie *movie) {
             printf("Error parsing line: %s\n", line);
             continue;
         }
+        movie[counter].points = 0;
         counter++;
     }
     fclose(fp);
