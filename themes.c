@@ -96,7 +96,7 @@ Themes *processThemes(const char *input) {
 int searchRatedThemes(Themes searchTheme, RatedTheme *ratedThemes) {
   for (int i = 0; i < 25; i++) {
     if (ratedThemes[i].theme == searchTheme) {
-      return ratedThemes[i].rating;
+      return i;
     }
   }
   return -1;
@@ -109,16 +109,17 @@ void scoreThemes(Movie *movies, RatedTheme *ratedThemes, Ratings *ratings) {
 
     Themes *themes = processThemes(movies[movieIndex].theme);
     for (int j = 0; j < 5 && themes[j] != -1; j++) {
-      int existingRating =
-          searchRatedThemes(themes[j], ratedThemes);
+      int existingIndex = searchRatedThemes(themes[j], ratedThemes);
 
-      if (existingRating == -1) {
+      if (existingIndex == -1) {  // Theme not found; add new entry
         ratedThemes[themeCount].theme = themes[j];
         ratedThemes[themeCount].rating = ratings[i].rating;
         themeCount++;
-      } else {
-        ratedThemes[existingRating].rating += ratings[i].rating;
+      } else {  // Theme found; update existing rating
+        ratedThemes[existingIndex].rating += ratings[i].rating;
       }
     }
+    free(themes);  // Free allocated memory after use
   }
 }
+
