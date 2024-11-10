@@ -12,4 +12,6 @@ typedef struct Movie {
   int points;
 } Movie;
 
+void recommendMovies (Movie *movie);
+
 #endif

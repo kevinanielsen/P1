@@ -51,4 +51,3 @@ int getMovieByTitle(Movie movies[], int movieCount, char *title) {
     }
   }
   return -1;
-}

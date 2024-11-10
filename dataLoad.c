@@ -17,7 +17,6 @@ int dataLoad(Movie *movie) {
     
     fgets(line, MAXCHAR, fp);
  
-
     while (fgets(line, MAXCHAR, fp) != NULL && counter < 250) {
           // While loop som anvender funktionen fgets. Den skal bruge et sted at opbevare dataen, maks antal characters den skal læse, og fra hvilken fil. Hvis det lykkedes opbevares dataen i det første parameter. Stopper hvis filen er tom, og derfor er NULL.
         if (sscanf(line, "%d; %100[^;]; %d; %100[^;]; %100[^\n]", 
@@ -27,6 +26,7 @@ int dataLoad(Movie *movie) {
             printf("Error parsing line: %s\n", line);
             continue;
         }
+        movie[counter].points = 0;
         counter++;
     }
     fclose(fp);

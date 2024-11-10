@@ -11,5 +11,4 @@ typedef enum Sadness {
 void getMood (Sadness *mood);
 const char *getMoodName(int mood);
 
-
 #endif // SADNESS_H

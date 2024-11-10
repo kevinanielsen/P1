@@ -5,20 +5,20 @@ void getGenre(Genres *genre);
 const char *getGenreName(Genres genre);
 
 void getGenre(Genres *genre) {
-  printf("\nWhat genre do you want to watch?\n");
+  printf("\nWhat genre would you want to watch?\n");
 
   for (int i = ACTION; i <= RETRO; i++) {
     printf(" %d: %s\n", i, getGenreName(i));
   }
 
-  printf("\nInput a number 0-21\n");
+  printf("\nPlease press 0-21 to choose your wanted genre!\n");
   int input;
   scanf(" %d", &input);
 
   if (input >= ACTION && input <= RETRO) {
     *genre = (Genres)input;
   } else {
-    printf("Invalid genre choice\n");
+    printf("Invalid genre\n");
     *genre = ACTION;
   }
 }
