@@ -34,7 +34,6 @@ typedef struct RatedTheme {
   int rating;
 } RatedTheme;
 
-void getTheme (Themes *theme); 
 const char* getThemeName(Themes theme);
 
 #endif
