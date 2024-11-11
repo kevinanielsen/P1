@@ -61,7 +61,8 @@ const char *getThemeName(Themes theme) {
 
 Themes getThemeEnum(const char *themeName) {
   for (int i = 0; i < sizeof(themeNames) / sizeof(themeNames[0]); i++) {
-    if (strcmp(themeNames[i], themeName) == 0) {
+    if (strcasecmp(themeNames[i], themeName) ==
+        0) { // Use case-insensitive comparison
       return (Themes)i;
     }
   }
@@ -69,24 +70,31 @@ Themes getThemeEnum(const char *themeName) {
 }
 
 Themes *processThemes(const char *input) {
-  // Copy the input string to a mutable array as strtok modifies the string
   char str[256];
-  strncpy(str, input, sizeof(str));
-  str[sizeof(str) - 1] = '\0'; // Ensure null termination
+  strncpy(str, input, sizeof(str) - 1);
+  str[sizeof(str) - 1] = '\0';
 
-  Themes *themes = malloc((5 + 1) * sizeof(Themes)); // Allocate space for 6 elements
+  Themes *themes = malloc((5 + 1) * sizeof(Themes));
+  if (!themes)
+    return NULL;
+
   int themeCount = 0;
 
-  // Tokenize the string based on ", "
-  char *token = strtok(str, ", ");
+  char *token = strtok(str, ",");
   while (token != NULL && themeCount < 5) {
-    Themes theme;
-    theme = getThemeEnum(token);
-    if (theme != -1) {
-      themes[themeCount] = theme;
-      themeCount++;
+    while (*token == ' ')
+      token++;
+    char *end = token + strlen(token) - 1;
+    while (end > token && *end == ' ') {
+      *end = '\0';
+      end--;
     }
-    token = strtok(NULL, ", ");
+
+    Themes theme = getThemeEnum(token);
+    if (theme != -1) {
+      themes[themeCount++] = theme;
+    }
+    token = strtok(NULL, ",");
   }
   themes[themeCount] = -1; // Null-terminate the array
 
@@ -103,23 +111,31 @@ int searchRatedThemes(Themes searchTheme, RatedTheme *ratedThemes) {
 }
 
 void scoreThemes(Movie *movies, RatedTheme *ratedThemes, Ratings *ratings) {
-  int themeCount = 0;
+  for (int i = 0; i < 25; i++) {
+    ratedThemes[i].theme = i;
+    ratedThemes[i].rating = 0;
+  }
+
   for (int i = 0; i < 10; i++) {
     int movieIndex = getMovieByTitle(movies, 250, ratings[i].title);
+    if (movieIndex == -1) {
+      printf("Warning: Movie not found: %s\n", ratings[i].title);
+      continue;
+    }
 
     Themes *themes = processThemes(movies[movieIndex].theme);
-    for (int j = 0; j < 5 && themes[j] != -1; j++) {
-      int existingIndex = searchRatedThemes(themes[j], ratedThemes);
+    if (!themes) {
+      printf("Warning: Failed to process themes for movie: %s\n",
+             movies[movieIndex].title);
+      continue;
+    }
 
-      if (existingIndex == -1) {  // Theme not found; add new entry
-        ratedThemes[themeCount].theme = themes[j];
-        ratedThemes[themeCount].rating = ratings[i].rating;
-        themeCount++;
-      } else {  // Theme found; update existing rating
-        ratedThemes[existingIndex].rating += ratings[i].rating;
+    for (int j = 0; themes[j] != -1 && j < 5; j++) {
+      Themes currentTheme = themes[j];
+      if (currentTheme >= 0 && currentTheme < 25) {
+        ratedThemes[currentTheme].rating += ratings[i].rating;
       }
     }
-    free(themes);  // Free allocated memory after use
+    free(themes);
   }
 }
-
