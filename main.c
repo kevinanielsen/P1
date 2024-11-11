@@ -15,9 +15,6 @@ int main() {
   int searchedGenreIndex[250];
   searchGenre(movies, 250, "Action", searchedGenreIndex);
 
-  printf(
-      "Made by: Elias, Isabella, Kevin, Mathias, Matilde, Oliver, Tobias \n");
-
   Ratings *ratings = rate10Movies();
 
   RatedTheme ratedThemes[25] = {0};
