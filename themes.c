@@ -6,25 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-void getTheme(Themes *theme) {
-  printf("\nHvilket tema vil du se?\n");
-
-  for (int i = IDENTITY; i <= REVENGE; i++) {
-    printf(" %d: %s\n", i, getThemeName(i));
-  }
-
-  printf("\nTast et tal mellem 0-24\n");
-  int input;
-  scanf(" %d", &input);
-
-  if (input >= IDENTITY && input <= REVENGE) {
-    *theme = (Themes)input;
-  } else {
-    printf("Ugyldigt temavalg\n");
-    *theme = IDENTITY;
-  }
-}
-
 const char *themeNames[] = {"Identity",
                             "Friendship",
                             "Courage",
