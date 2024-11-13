@@ -1,6 +1,5 @@
 #ifndef movie_H
 #define movie_H
-
 #include "themes.h"
 #include "genres.h"
 
@@ -14,5 +13,7 @@ typedef struct Movie {
   Genres genres[5];
   int points;
 } Movie;
+
+void recommendMovies (Movie *movie);
 
 #endif
