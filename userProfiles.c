@@ -2,7 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 #include "ratings.h"
+/* TO DO 
+Ændre således at den bare spørge direkte om brugerens navn, og hvis ikke opretter den ny brugere?
 
+*/ 
 int userProfilesWrite(Ratings *rate10Movies){
   FILE *fp1;
   fp1 = fopen("users.csv", "a+");

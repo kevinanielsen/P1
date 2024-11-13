@@ -6,19 +6,19 @@
 #include "search.h"
 #include "accountCheck.h"
 #include "userProfiles.h"
+#include "userSearch.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 int main() {
-  int check;
 
-  Movie movie[250];
-  dataLoad(movie);
+  Movie movies[250];
+  dataLoad(movies);
   int searchedGenreIndex[250];
-  searchGenre(movie, 250, "Action", searchedGenreIndex);
+  searchGenre(movies, 250, "Action", searchedGenreIndex);
   // searchTheme(movie, 250, "Fear");
 
-
+  int check;
   check = accountCheck();
   if(check == 1){
     Ratings *ratings = malloc(10 * sizeof(Ratings));
@@ -32,13 +32,22 @@ int main() {
     getGenre(&genre);
     printf("Genre: %s\n", getGenreName(genre));
 
+    recommendMovies(movies);
+
     free(ratings);
   }
   else if(check == 0){
+    char user;
     printf("Enter your username and choose a Genre. \n");
-    // Funktion som søger efter brugerens data i csv filen. Derefter skal brugerens data indlæses og bruges til at anbefale en film om igen.
+    scanf("%s", &user);
+  
+    int j = userSearch(&user);
+    int array[9];
+    int size = 0;
+    stringToIntArray(userProfiles[j].userRatings, array, &size);
+   
+    // Hvor skal arrayet indsættes til anbefalingen af film?
 
-     
     Sadness mood;
     getMood(&mood);
 
@@ -46,13 +55,12 @@ int main() {
     getGenre(&genre);
     printf("Genre: %s\n", getGenreName(genre));
 
+    recommendMovies(movies);
+
     // Udleverer ny film herefter.
   }
   else{
     printf("Invalid input\n");
   }
-
-
-
   return 0;
 }
