@@ -20,9 +20,7 @@ void getMood(Sadness *mood) {
   printf("Please state your current mood, with a focus on any feelings of "
          "sadness you may be experiencing!\n");
   printf("Press 0 - 3\n");
-  printf(
-      "0 No sadness\n1 Mild sadness\n2 Moderate sadness\n3 Severe sadness\n");
-
+  
   for (int i = NO_SADNESS; i <= SEVERE_SADNESS; i++) {
     printf(" %d: %s\n", i, getMoodName(i));
   }
