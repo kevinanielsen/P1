@@ -27,11 +27,11 @@ int userSearch(char *user) { // Indsætter værdier i structen for brugerens nav
   for (int j = 0; j < counter; j++) { // Finder indexet af den søgte bruger
     if (strcmp(user, userProfiles[j].user) == 0) {
       return j;
-    }
+    } 
   }
-
-  return EXIT_FAILURE;
-}
+  printf("No user, exiting...");
+  exit(EXIT_FAILURE);
+  }
 
 int stringToIntArray(char *str, int *array, int *size) { // Konverterer stringen med film-ratings til et array.
   char *token;
