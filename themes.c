@@ -1,57 +1,122 @@
-#include <stdio.h>
 #include "themes.h"
+#include "movie.h"
+#include "ratings.h"
+#include "search.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-const char* getThemeName(Themes theme) {
-    switch (theme) {
-        case IDENTITY: 
-            return "Identity";
-        case FRIENDSHIP: 
-            return "Friendship";
-        case COURAGE: 
-            return "Courage";
-        case FEAR: 
-            return "Fear";
-        case SACRIFICE: 
-            return "Sacrifice";
-        case POWER_AND_CORRUPTION: 
-            return "Power and Corruption";
-        case BETRAYAL: 
-            return "Betrayal";
-        case GOOD_VS_EVIL: 
-            return "Good vs. Evil";
-        case ADVENTURE: 
-            return "Adventure";
-        case JUSTICE: 
-            return "Justice";
-        case SURVIVAL: 
-            return "Survival";
-        case LOVE: 
-            return "Love";
-        case WAR_AND_PEACE: 
-            return "War and Peace";
-        case FAMILY: 
-            return "Family";
-        case DREAMS_AND_ASPIRATIONS: 
-            return "Dreams and Aspirations";
-        case COMING_OF_AGE: 
-            return "Coming of Age";
-        case LOSS: 
-            return "Loss";
-        case FREEDOM: 
-            return "Freedom";
-        case HOPE: 
-            return "Hope";
-        case REDEMPTION: 
-            return "Redemption";
-        case MENTAL_HEALTH: 
-            return "Mental Health";
-        case TECHNOLOGY_AND_HUMANITY: 
-            return "Technology and Humanity";
-        case COMEDY: 
-            return "Comedy";
-        case REVENGE: 
-            return "Revenge";
-        default: 
-            return "Unknown";
+const char *themeNames[] = {"Identity",
+                            "Friendship",
+                            "Courage",
+                            "Fear",
+                            "Sacrifice",
+                            "Power and Corruption",
+                            "Betrayal",
+                            "Good vs. Evil",
+                            "Adventure",
+                            "Justice",
+                            "Survival",
+                            "Love",
+                            "Isolation",
+                            "War and Peace",
+                            "Family",
+                            "Dreams and Aspirations",
+                            "Coming of Age",
+                            "Loss",
+                            "Freedom",
+                            "Hope",
+                            "Redemption",
+                            "Mental Health",
+                            "Technology and Humanity",
+                            "Comedy",
+                            "Revenge"};
+
+const char *getThemeName(Themes theme) {
+  if (theme >= 0 && theme < sizeof(themeNames) / sizeof(themeNames[0])) {
+    return themeNames[theme];
+  } else {
+    return "Unknown";
+  }
+}
+
+Themes getThemeEnum(const char *themeName) {
+  for (int i = 0; i < sizeof(themeNames) / sizeof(themeNames[0]); i++) {
+    if (strcasecmp(themeNames[i], themeName) ==
+        0) { // Use case-insensitive comparison
+      return (Themes)i;
     }
+  }
+  return -1;
+}
+
+Themes *processThemes(const char *input) {
+  char str[256];
+  strncpy(str, input, sizeof(str) - 1);
+  str[sizeof(str) - 1] = '\0';
+
+  Themes *themes = malloc((5 + 1) * sizeof(Themes));
+  if (!themes)
+    return NULL;
+
+  int themeCount = 0;
+
+  char *token = strtok(str, ",");
+  while (token != NULL && themeCount < 5) {
+    while (*token == ' ')
+      token++;
+    char *end = token + strlen(token) - 1;
+    while (end > token && *end == ' ') {
+      *end = '\0';
+      end--;
+    }
+
+    Themes theme = getThemeEnum(token);
+    if (theme != -1) {
+      themes[themeCount++] = theme;
+    }
+    token = strtok(NULL, ",");
+  }
+  themes[themeCount] = -1; // Null-terminate the array
+
+  return themes;
+}
+
+int searchRatedThemes(Themes searchTheme, RatedTheme *ratedThemes) {
+  for (int i = 0; i < 25; i++) {
+    if (ratedThemes[i].theme == searchTheme) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+void scoreThemes(Movie *movies, RatedTheme *ratedThemes, Ratings *ratings) {
+  for (int i = 0; i < 25; i++) {
+    ratedThemes[i].theme = i;
+    ratedThemes[i].rating = 0;
+  }
+
+  for (int i = 0; i < 10; i++) {
+    int movieIndex = getMovieByTitle(movies, 250, ratings[i].title);
+    if (movieIndex == -1) {
+      printf("Warning: Movie not found: %s\n", ratings[i].title);
+      continue;
+    }
+
+    Themes *themes = processThemes(movies[movieIndex].theme);
+    if (!themes) {
+      printf("Warning: Failed to process themes for movie: %s\n",
+             movies[movieIndex].title);
+      continue;
+    }
+
+    for (int j = 0; themes[j] != -1 && j < 5; j++) {
+      Themes currentTheme = themes[j];
+      if (currentTheme >= 0 && currentTheme < 25) {
+        ratedThemes[currentTheme].rating += ratings[i].rating;
+      }
+    }
+    free(themes);
+  }
 }

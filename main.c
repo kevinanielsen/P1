@@ -1,5 +1,4 @@
 #include "dataLoad.h"
-#include "genres.h"
 #include "movie.h"
 #include "ratings.h"
 #include "sadness.h"
@@ -7,6 +6,7 @@
 #include "accountCheck.h"
 #include "userProfiles.h"
 #include "userSearch.h"
+#include "themes.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -56,5 +56,6 @@ int main() {
   printf("Genre: %s\n", getGenreName(genre));
 
   recommendMovies(movies);
+
   return 0;
 }
