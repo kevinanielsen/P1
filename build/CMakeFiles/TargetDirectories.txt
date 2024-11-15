@@ -1,0 +1,3 @@
+/Users/mathildepetersen/P1/build/CMakeFiles/main.dir
+/Users/mathildepetersen/P1/build/CMakeFiles/edit_cache.dir
+/Users/mathildepetersen/P1/build/CMakeFiles/rebuild_cache.dir
