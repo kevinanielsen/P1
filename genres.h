@@ -24,6 +24,7 @@ typedef enum Genres {
     WAR,
     WESTERN,
     RETRO,
+    NO_GENRE
 } Genres;
 
 void getGenre (Genres *genre); 
