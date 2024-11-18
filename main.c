@@ -30,6 +30,7 @@ int main() {
 
   Genres genre;
   getGenre(&genre);
+  
   printf("Genre: %s\n", getGenreName(genre));
 
   recommendMovies(movies);
