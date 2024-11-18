@@ -1,5 +1,6 @@
 #include "genres.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void getGenre(Genres *genre);
 const char *getGenreName(Genres genre);
@@ -11,7 +12,7 @@ void getGenre(Genres *genre) {
     printf(" %d: %s\n", i, getGenreName(i));
   }
 
-  printf("\nPlease press 0-21 to choose your wanted genre!\n");
+  printf("\nPlease press 0-22 to choose your wanted genre!\n");
   int input;
   scanf(" %d", &input);
 
@@ -69,6 +70,8 @@ const char *getGenreName(Genres genre) {
     return "WESTERN";
   case RETRO:
     return "RETRO";
+  case NO_GENRE:
+    return "NO_GENRE";
   default:
     return "Unknown";
   }
