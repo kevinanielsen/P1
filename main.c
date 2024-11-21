@@ -14,18 +14,18 @@ int main() {
 
   int searchedGenreIndex[250];
 
-  // Ratings *ratings = rate10Movies();
+  Ratings *ratings = rate10Movies();
 
-  // RatedTheme ratedThemes[25] = {0};
-  // scoreThemes(movies, ratedThemes, ratings);
+  RatedTheme ratedThemes[25] = {0};
+  scoreThemes(movies, ratedThemes, ratings);
 
-  // for (int i = 0; i < 25; i++) {
-  //   printf("Theme: %s, Rating: %d\n", getThemeName(ratedThemes[i].theme),
-  //          ratedThemes[i].rating);
-  // }
+  for (int i = 0; i < 25; i++) {
+    printf("Theme: %s, Rating: %d\n", getThemeName(ratedThemes[i].theme),
+           ratedThemes[i].rating);
+  }
 
-  // Sadness mood;
-  // getMood(&mood);
+  Sadness mood;
+  getMood(&mood);
 
   Genres genre;
   getGenre(&genre);
@@ -41,7 +41,7 @@ int main() {
 
   recommendMovies(movies, searchedGenreIndex, matchCount);
 
-  // free(ratings);
+  free(ratings);
 
   return 0;
 }
