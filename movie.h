@@ -13,5 +13,4 @@ typedef struct Movie {
 } Movie;
 
 void recommendMovies (Movie *movie);
-
 #endif
