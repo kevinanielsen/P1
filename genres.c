@@ -1,7 +1,6 @@
 #include "genres.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 void getGenre(Genres *genre) {
   printf("\nWhat genre would you want to watch?\n");
