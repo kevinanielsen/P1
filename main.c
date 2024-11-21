@@ -13,7 +13,6 @@ int main() {
   dataLoad(movies);
 
   int searchedGenreIndex[250];
-  searchGenre(movies, 250, "Action", searchedGenreIndex);
 
   // Ratings *ratings = rate10Movies();
 
