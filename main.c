@@ -2,6 +2,7 @@
 #include "movie.h"
 #include "ratings.h"
 #include "sadness.h"
+#include "scoreMovies.h"
 #include "search.h"
 #include "themes.h"
 #include <stdio.h>
@@ -19,6 +20,7 @@ int main() {
 
   RatedTheme ratedThemes[25] = {0};
   scoreThemes(movies, ratedThemes, ratings);
+  scoreMovies(movies, 250, ratedThemes, 25);
 
   // for (int i = 0; i < 25; i++) {
   //   printf("Theme: %s, Rating: %d\n", getThemeName(ratedThemes[i].theme),
@@ -30,7 +32,7 @@ int main() {
 
   Genres genre;
   getGenre(&genre);
-  
+
   printf("Genre: %s\n", getGenreName(genre));
 
   recommendMovies(movies);
