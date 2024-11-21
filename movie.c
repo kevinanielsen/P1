@@ -6,7 +6,7 @@ void insertionSort(Movie movie[], int n) {
     Movie key = movie[i];
     int j = i - 1;
 
-    while (j >= 0 && movie[j].points > key.points) {
+    while (j >= 0 && movie[j].points < key.points) {
       movie[j + 1] = movie[j];
       j = j - 1;
     }
@@ -27,6 +27,7 @@ void recommendMovies(Movie *movie) {
     switch (answer) {
     case 1:
       running = 0;
+      printf("Enjoy your movie! \n");
       break;
     case 0:
       i++;
