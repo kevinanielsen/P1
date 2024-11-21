@@ -9,7 +9,7 @@ void getGenre(Genres *genre) {
     printf(" %d: %s\n", i, getGenreName(i));
   }
 
-  printf("\nPlease press 0-22 to choose your desired genre!\n");
+  printf("\nPlease press 0-21 to choose your desired genre!\n");
   int input;
   scanf(" %d", &input);
 
