@@ -14,7 +14,6 @@ int main() {
   dataLoad(movies);
 
   int searchedGenreIndex[250];
-  searchGenre(movies, 250, "Action", searchedGenreIndex);
 
   Ratings *ratings = rate10Movies();
 
@@ -22,10 +21,10 @@ int main() {
   scoreThemes(movies, ratedThemes, ratings);
   scoreMovies(movies, 250, ratedThemes, 25);
 
-  // for (int i = 0; i < 25; i++) {
-  //   printf("Theme: %s, Rating: %d\n", getThemeName(ratedThemes[i].theme),
-  //          ratedThemes[i].rating);
-  // }
+  for (int i = 0; i < 25; i++) {
+    printf("Theme: %s, Rating: %d\n", getThemeName(ratedThemes[i].theme),
+           ratedThemes[i].rating);
+  }
 
   Sadness mood;
   getMood(&mood);
@@ -35,7 +34,14 @@ int main() {
 
   printf("Genre: %s\n", getGenreName(genre));
 
-  recommendMovies(movies);
+  searchGenre(movies, 250, getGenreName(genre), searchedGenreIndex);
+
+  int matchCount = 0;
+  while (searchedGenreIndex[matchCount] != 0 && matchCount < 250) {
+    matchCount++;
+  }
+
+  recommendMovies(movies, searchedGenreIndex, matchCount);
 
   free(ratings);
 

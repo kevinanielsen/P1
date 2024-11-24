@@ -1,4 +1,5 @@
 #include "movie.h"
+#include "search.h"
 #include <stdio.h>
 
 void insertionSort(Movie movie[], int n) {
@@ -14,27 +15,35 @@ void insertionSort(Movie movie[], int n) {
   }
 }
 
-void recommendMovies(Movie *movie) {
-  insertionSort(movie, 250);
-  int i = 0;
-  int running = 1;
-  while (running) {
-    int answer;
-    printf("Our recommendation is: %s \n", movie[i].title);
-    printf("Do you want to watch this movie? (1 = yes, 0 = no) \n");
-    scanf(" %d", &answer);
+void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
+    int i = 0;
+    int running = 1;
 
-    switch (answer) {
-    case 1:
-      running = 0;
-      printf("Enjoy your movie! \n");
-      break;
-    case 0:
-      i++;
-      break;
-    default:
-      printf("Wrong input! Type 1 for yes or 0 for no!");
-      break;
+
+    while (running && i < matchCount) {
+      int answer;
+
+      Movie recommendedMovie = movies[searchedGenreIndex[i]];
+
+      printf("Our recommendation is: %s \nIncluding genres: %s\n", recommendedMovie.title, recommendedMovie.genre);
+      printf("Do you want to watch this movie? (1 = yes, 0 = no)\n");
+      scanf(" %d", &answer);
+
+      switch (answer) {
+      case 1:
+          printf("Enjoy your movie: %s!\n", recommendedMovie.title);
+          running = 0;
+          break;
+      case 0:
+        i++;
+        if (i >= matchCount) {
+            printf("No more recommendations available.\n");
+            running = 0;
+            }
+        break;
+      default:
+        printf("Wrong input! Type 1 for yes or 0 for no!\n");
+        break;
+        }
     }
-  }
 }

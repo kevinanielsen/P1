@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void getGenre(Genres *genre);
-const char *getGenreName(Genres genre);
-
 void getGenre(Genres *genre) {
   printf("\nWhat genre would you want to watch?\n");
 
@@ -12,7 +9,7 @@ void getGenre(Genres *genre) {
     printf(" %d: %s\n", i, getGenreName(i));
   }
 
-  printf("\nPlease press 0-22 to choose your wanted genre!\n");
+  printf("\nPlease press 0-21 to choose your desired genre!\n");
   int input;
   scanf(" %d", &input);
 
@@ -24,52 +21,52 @@ void getGenre(Genres *genre) {
   }
 }
 
-const char *getGenreName(Genres genre) {
+char *getGenreName(Genres genre) {
   switch (genre) {
   case ACTION:
-    return "ACTION";
+    return "Action";
   case ADVENTURE_GENRE:
-    return "ADVENTURE";
+    return "Adventure";
   case ANIMATION:
-    return "ANIMATION";
+    return "Animation";
   case BIOGRAPHY:
-    return "BIOGRAPHY";
+    return "Biography";
   case COMEDY_GENRE:
-    return "COMEDY";
+    return "Comedy";
   case CRIME:
-    return "CRIME";
+    return "Crime";
   case DRAMA:
-    return "DRAMA";
+    return "Drama";
   case FAMILY_GENRE:
-    return "FAMILY";
+    return "Family";
   case FANTASY:
-    return "FANTASY";
+    return "Fantasy";
   case FILM_NOIR:
-    return "FILM_NOIR";
+    return "Film-Noir";
   case HISTORY:
-    return "HISTORY";
+    return "History";
   case HORROR:
-    return "HORROR";
+    return "Horror";
   case MUSIC:
-    return "MUSIC";
+    return "Music";
   case MUSICAL:
-    return "MUSICAL";
+    return "Musical";
   case MYSTERY:
-    return "MYSTERY";
+    return "Mystery";
   case ROMANCE:
-    return "ROMANCE";
+    return "Romance";
   case SCI_FI:
-    return "SCI_FI";
+    return "Sci-Fi";
   case SPORT:
-    return "SPORT";
+    return "Sport";
   case THRILLER:
-    return "THRILLER";
+    return "Thriller";
   case WAR:
-    return "WAR";
+    return "War";
   case WESTERN:
-    return "WESTERN";
+    return "Western";
   case RETRO:
-    return "RETRO";
+    return "Retro";
   case NO_GENRE:
     return "NO_GENRE";
   default:

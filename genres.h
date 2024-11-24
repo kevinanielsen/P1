@@ -28,6 +28,6 @@ typedef enum Genres {
 } Genres;
 
 void getGenre (Genres *genre); 
-const char* getGenreName(Genres genre);
+char* getGenreName(Genres genre);
 
 #endif
