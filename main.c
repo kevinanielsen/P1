@@ -50,7 +50,6 @@ int main() {
   }
   int searchedGenreIndex[250];
 
-  Ratings *ratings = rate10Movies();
 
   RatedTheme ratedThemes[25] = {0};
   scoreThemes(movies, ratedThemes, ratings);
