@@ -7,6 +7,6 @@ typedef struct Ratings {
 } Ratings;
 
 // Function prototypes, macros, etc.
-Ratings *rate10Movies();
+Ratings *rate10Movies(Ratings *ratings);
 
 #endif // ratings_H
