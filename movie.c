@@ -7,7 +7,7 @@ void insertionSort(Movie movie[], int n) {
     Movie key = movie[i];
     int j = i - 1;
 
-    while (j >= 0 && movie[j].points > key.points) {
+    while (j >= 0 && movie[j].points < key.points) {
       movie[j + 1] = movie[j];
       j = j - 1;
     }
@@ -18,6 +18,7 @@ void insertionSort(Movie movie[], int n) {
 void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
     int i = 0;
     int running = 1;
+
 
     while (running && i < matchCount) {
       int answer;
