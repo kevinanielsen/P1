@@ -74,7 +74,7 @@ int main() {
   while (searchedGenreIndex[matchCount] != 0 && matchCount < 250) {
     matchCount++;
   }
-
+  insertionSort(movies, 250);
   recommendMovies(movies, searchedGenreIndex, matchCount);
 
   return 0;
