@@ -74,8 +74,15 @@ int main() {
   while (searchedGenreIndex[matchCount] != 0 && matchCount < 250) {
     matchCount++;
   }
+  Movie *filteredMovies = malloc(matchCount * sizeof(Movie));
+  int counter = 0;
+  for (int i = 0; i < matchCount; i++) {
+    filteredMovies[counter] = movies[searchedGenreIndex[i]];
+    counter++;
+  }
+  insertionSort(filteredMovies, 250);
+  recommendMovies(filteredMovies, searchedGenreIndex, matchCount);
 
-  recommendMovies(movies, searchedGenreIndex, matchCount);
 
   return 0;
 }
