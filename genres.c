@@ -12,7 +12,7 @@ void getGenre(Genres *genre) {
   printf("\nPlease press 0-22 to choose your desired genre!\n");
   int input;
   while (1) {
-    printf("Your rating: ");
+    printf("Your genre: ");
     scanf(" %d", &input);
     if (input >= 0 && input <= 22) {
       *genre = (Genres)input;
