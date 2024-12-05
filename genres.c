@@ -70,7 +70,7 @@ char *getGenreName(Genres genre) {
   case RETRO:
     return "Retro";
   case NO_GENRE:
-    return "No ";
+    return "No genre";
   default:
     return "Unknown";
   }
