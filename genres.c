@@ -14,7 +14,7 @@ void getGenre(Genres *genre) {
   while (1) {
     printf("Your genre: ");
     scanf(" %d", &input);
-    if (input >= 0 && input <= 22) {
+    if (input >= ACTION && input <= NO_GENRE) {
       *genre = (Genres)input;
       break;
     } else {
