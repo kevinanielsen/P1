@@ -18,7 +18,7 @@ void getGenre(Genres *genre) {
       *genre = (Genres)input;
       break;
     } else {
-      printf("Invalid rating! Please enter a number between 0 and 22.\n");
+      printf("Invalid genre! Please enter a number between 0 and 22.\n");
     }
   }
 }
