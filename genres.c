@@ -72,6 +72,6 @@ char *getGenreName(Genres genre) {
   case NO_GENRE:
     return "No genre";
   default:
-    return "Unknown";
+    exit(EXIT_FAILURE);
   }
 }
