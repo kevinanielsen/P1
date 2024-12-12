@@ -24,15 +24,16 @@ void getMood(Sadness *mood) {
   for (int i = NO_SADNESS; i <= SEVERE_SADNESS; i++) {
     printf(" %d: %s\n", i, getMoodName(i));
   }
-
-  printf("\nEnter a number between 0-3\n");
+  
   int input;
-  scanf(" %d", &input);
-
-  if (input >= NO_SADNESS && input <= SEVERE_SADNESS) {
-    *mood = (Sadness)input;
-  } else {
-    printf("Invalid input\n");
-    *mood = NO_SADNESS;
+  while (1) {
+    printf("\nEnter a number between 0-3\n");
+    scanf(" %d", &input);
+      if (input >= NO_SADNESS && input <= SEVERE_SADNESS) {
+        *mood = (Sadness)input;
+        break;
+      } else {
+        printf("Invalid input! Please enter a number between 0 and 3.\n");
+      }
   }
 }
