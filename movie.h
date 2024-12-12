@@ -13,4 +13,5 @@ typedef struct Movie {
 } Movie;
 
 void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount);
+void insertionSort(Movie movie[], int n);
 #endif
