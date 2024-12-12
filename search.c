@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void searchGenre(Movie movies[], int movieCount, char *keyword,
-                 int *searchedGenreIndex) {
+int searchGenre(Movie movies[], int movieCount, char *keyword,
+                int *searchedGenreIndex) {
   int foundCount = 0;
   int j = 0;
   for (int i = 0; i < movieCount; i++) {
@@ -16,6 +16,7 @@ void searchGenre(Movie movies[], int movieCount, char *keyword,
   if (foundCount == 0) {
     printf("No movies found with genre containing '%s'.\n", keyword);
   }
+  return foundCount;
 }
 
 void searchTheme(Movie movies[], int movieCount, char *keyword,
