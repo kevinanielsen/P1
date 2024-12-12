@@ -3,3 +3,5 @@ build
 .DS_Store
 *.out
 .code-workspace
+.build
+.cache
