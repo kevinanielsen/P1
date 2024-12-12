@@ -16,34 +16,39 @@ void insertionSort(Movie movie[], int n) {
 }
 
 void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
-    int i = 0;
-    int running = 1;
+  if (!movies || !searchedGenreIndex || matchCount <= 0) {
+    printf("Invalid input data.\n");
+    return;
+  }
 
+  for (int i = 0; i < matchCount; i++) {
+    int answer;
+    Movie recommendedMovie = movies[searchedGenreIndex[i]];
 
-    while (running && i < matchCount) {
-      int answer;
+    printf("Our recommendation is: %s \nIncluding genres: %s\n",
+           recommendedMovie.title, recommendedMovie.genre);
 
-      Movie recommendedMovie = movies[searchedGenreIndex[i]];
-
-      printf("Our recommendation is: %s \nIncluding genres: %s\n", recommendedMovie.title, recommendedMovie.genre);
+    while (1) {
       printf("Do you want to watch this movie? (1 = yes, 0 = no)\n");
-      scanf(" %d", &answer);
+      int isInputNumber = scanf(" %d", &answer);
 
-      switch (answer) {
-      case 1:
-          printf("Enjoy your movie: %s!\n", recommendedMovie.title);
-          running = 0;
-          break;
-      case 0:
-        i++;
-        if (i >= matchCount) {
-            printf("No more recommendations available.\n");
-            running = 0;
-            }
+      if (!isInputNumber) {
+        while (getchar() != '\n')
+          ;
+        printf("Invalid input. Please enter 1 for yes or 0 for no.\n");
+        continue;
+      }
+
+      if (answer == 1) {
+        printf("Enjoy your movie: %s!\n", recommendedMovie.title);
+        return;
+      } else if (answer == 0) {
         break;
-      default:
-        printf("Wrong input! Type 1 for yes or 0 for no!\n");
-        break;
-        }
+      } else {
+        printf("Invalid choice. Please enter 1 for yes or 0 for no.\n");
+      }
     }
+  }
+
+  printf("No more recommendations available.\n");
 }
