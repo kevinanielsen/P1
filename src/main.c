@@ -28,13 +28,14 @@ int main() {
   dataLoad(movies);
 
   int userCheck = accountCheck();
+  char user[50];
   if (userCheck == 1) {
     rate10Movies(ratings);
     userProfilesWrite(ratings);
   } else if (userCheck == 0) {
-    char user;
-    scanf("%s", &user);
-    int j = userSearch(&user);
+    scanf("%s", user);
+      printf("User entered: %s\n", user);
+    int j = userSearch(user);
     int userArray[10];
     int size = 0;
     stringToIntArray(userProfiles[j].userRatings, userArray, &size);
@@ -77,8 +78,8 @@ int main() {
       searchedGenreIndex[i] = i;
     }
   }
-
-  recommendMovies(movies, searchedGenreIndex, matchCount);
+      printf("Current user: %s \n", user);
+  recommendMovies(movies, searchedGenreIndex, matchCount, user);
 
   return 0;
 }

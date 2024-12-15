@@ -1,6 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "movie.h"
 #include "search.h"
-#include <stdio.h>
+#include "saveLastMovie.h"
 
 void insertionSort(Movie movie[], int n) {
   for (int i = 1; i < n; ++i) {
@@ -15,8 +17,8 @@ void insertionSort(Movie movie[], int n) {
   }
 }
 
-void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
-  if (!movies || !searchedGenreIndex || matchCount <= 0) {
+void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount, char *user) {
+  if (matchCount <= 0) {
     printf("Invalid input data.\n");
     return;
   }
@@ -41,6 +43,7 @@ void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
 
       if (answer == 1) {
         printf("Enjoy your movie: %s!\n", recommendedMovie.title);
+        saveLastMovie(recommendedMovie.title, user);
         return;
       } else if (answer == 0) {
         break;
