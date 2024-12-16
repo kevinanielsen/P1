@@ -25,8 +25,8 @@ void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
     int answer;
     Movie recommendedMovie = movies[searchedGenreIndex[i]];
 
-    printf("Our recommendation is: %s \nIncluding genres: %s\n",
-           recommendedMovie.title, recommendedMovie.genre);
+    printf("Our recommendation is: %s \nIncluding genres: %s\nSadness score: %d\n\n",
+           recommendedMovie.title, recommendedMovie.genre, recommendedMovie.sadness);
 
     while (1) {
       printf("Do you want to watch this movie? (1 = yes, 0 = no)\n");
