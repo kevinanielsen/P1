@@ -46,7 +46,7 @@ int main() {
   } else {
     printf("Invalid input\n");
   }
-  int searchedGenreIndex[250];
+  int searchedGenreIndex[250] = {0};
 
   RatedTheme ratedThemes[25] = {0};
   scoreThemes(movies, ratedThemes, ratings);
@@ -78,7 +78,12 @@ int main() {
     }
   }
 
-  recommendMovies(movies, searchedGenreIndex, matchCount);
+  int filteredMovieIndexes[250] = {0};
+  int filteredMovieCount =
+      filterMoviesBySadness(movies, searchedGenreIndex, matchCount,
+                            mood, filteredMovieIndexes);
+
+  recommendMovies(movies, filteredMovieIndexes, filteredMovieCount);
 
   return 0;
 }
