@@ -33,5 +33,5 @@ cmake --build .
 *Make sure you are in the root of the project (P1) and have built the program using steps above.*
 
 ```
-build/main
+build/MovieProject
 ```
