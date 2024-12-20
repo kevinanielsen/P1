@@ -16,17 +16,14 @@ void insertionSort(Movie movie[], int n) {
 }
 
 void recommendMovies(Movie *movies, int *searchedGenreIndex, int matchCount) {
-  if (!movies || !searchedGenreIndex || matchCount <= 0) {
-    printf("Invalid input data.\n");
-    return;
-  }
-
   for (int i = 0; i < matchCount; i++) {
     int answer;
     Movie recommendedMovie = movies[searchedGenreIndex[i]];
 
-    printf("Our recommendation is: %s \nIncluding genres: %s\nSadness score: %d\n\n",
-           recommendedMovie.title, recommendedMovie.genre, recommendedMovie.sadness);
+    printf("\nOur recommendation is: %s \nIncluding genres: %s\nSadness score: "
+           "%d\n\n",
+           recommendedMovie.title, recommendedMovie.genre,
+           recommendedMovie.sadness);
 
     while (1) {
       printf("Do you want to watch this movie? (1 = yes, 0 = no)\n");
