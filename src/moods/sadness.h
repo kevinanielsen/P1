@@ -16,4 +16,4 @@ const char *getMoodName(int mood);
 int filterMoviesBySadness(Movie movies[], int movieIndexes[], int size,
                           Sadness highestSadness, int returnMovieIndexes[]);
 
-#endif // SADNESS_H
+#endif

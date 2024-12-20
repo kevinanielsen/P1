@@ -67,10 +67,8 @@ int main() {
   int matchCount = 0;
 
   if (genre != NO_GENRE) {
-    searchGenre(movies, 250, getGenreName(genre), searchedGenreIndex);
-    while (searchedGenreIndex[matchCount] != 0 && matchCount < 250) {
-      matchCount++;
-    }
+    matchCount =
+        searchGenre(movies, 250, getGenreName(genre), searchedGenreIndex);
   } else {
     matchCount = 250;
     for (int i = 0; i < 250; i++) {
@@ -79,9 +77,8 @@ int main() {
   }
 
   int filteredMovieIndexes[250] = {0};
-  int filteredMovieCount =
-      filterMoviesBySadness(movies, searchedGenreIndex, matchCount,
-                            mood, filteredMovieIndexes);
+  int filteredMovieCount = filterMoviesBySadness(
+      movies, searchedGenreIndex, matchCount, mood, filteredMovieIndexes);
 
   recommendMovies(movies, filteredMovieIndexes, filteredMovieCount);
 

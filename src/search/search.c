@@ -38,15 +38,12 @@ void searchTheme(Movie movies[], int movieCount, char *keyword,
 int getMovieByTitle(Movie movies[], int movieCount, char *title) {
   for (int i = 0; i < movieCount; i++) {
 
-    // Locate the first and second apostrophe in `title`
     char *start = strchr(title, '\'');
     char *end = strrchr(title, '\'');
 
     if (start != NULL && end != NULL && start != end) {
-      // Calculate the length of the substring between the apostrophes
       size_t length = end - start - 1;
 
-      // Compare the substring with `movies[i].title`
       if (strncmp(movies[i].title, start + 1, length) == 0 &&
           movies[i].title[length] == '\0') {
         return i;
